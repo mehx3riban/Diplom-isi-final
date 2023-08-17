@@ -1,0 +1,140 @@
+body{
+    background-color: var(--bg-color);
+}
+
+.booking-content{
+    padding: 80px 90px 20px ;
+
+}
+
+/* ---------------CALENDAR CSS--------------- */
+
+.booking-calendar{
+    display: flex;
+    align-items: center;
+}
+
+.booking-calendar .calendar-icon{
+    padding: 13px 15px;
+    background-color: #fff;
+    color: var(--main-color);
+    font-size: 19px;
+    border-left: 2px solid var(--main-color);
+}
+
+.react-datepicker__header {
+    background-color: var(--bg-color) !important; 
+    color: var(--main-color) !important;
+    border: none !important;
+  }
+
+.react-datepicker__day {
+    color: var(--main-color) !important;
+}
+
+.react-datepicker__input-container input {
+    color: var(--secondary-color) !important;
+    padding:  17px 0 17px 8px;
+    font-family: var(--italic-font);
+    font-weight: 700;
+    border: none;
+    font-size: 14px;
+    max-width: 203px;
+    
+  }
+  .react-datepicker__day--selected {
+    color: var(--secondary-color) !important;
+    background-color: var(--main-color) !important;
+  }
+  .react-datepicker__input-container input:focus{
+    outline: none !important;
+
+  }
+
+  .css-4xgw5l-IndicatorsContainer2{
+    padding-right: 45px !important;
+  }
+
+
+  /* -------------------TIME PICKER CSS-------------- */
+
+.custom-select {
+  border: none !important;
+  font-family:'var(--main-font)' !important;
+}
+.custom-select__control {
+  border: 2px solid #ccc;
+  
+}
+
+.custom-select__option {
+  color: black;
+}
+
+.css-4xgw5l-IndicatorsContainer2{
+  padding: 9px 20px;
+}
+
+.css-1dimb5e-singleValue{
+  font-family: var(--italic-font);
+  font-size: 14px;
+  font-weight: 700;
+}
+.css-1u9des2-indicatorSeparator{
+display: none;
+}
+
+
+.clock-icon{
+  padding: 14px 15px;
+    background-color: #fff;
+    color: var(--main-color);
+    font-size: 19px;
+    border-left: 2px solid var(--main-color);
+}
+
+.booking-content span{
+  font-weight: 700;
+  padding-right: 20px;
+  font-size: 18px;
+  font-family: var(--header-font);
+}
+
+.booking-people{
+  padding-left: 35px; 
+}
+
+
+@media(max-width:1300px){
+  .booking-content{
+    padding: 80px 0px 50px !important ;
+  }
+  .booking-content span{
+    display: none;
+  }
+
+}
+
+@media(max-width:992px){
+  .booking-content{
+    padding: 40px 20px 50px !important;  
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    
+  }
+  .booking-people{
+    padding-left: 0;
+    margin-left: 9px;
+  }
+  .booking-content > div{
+    margin-bottom: 20px;
+    justify-content: center;
+    width: 250px !important;
+  }
+
+   
+
+}
+

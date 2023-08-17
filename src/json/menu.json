@@ -1,0 +1,111 @@
+[
+    {
+        "id":1,
+        "CaffeImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692150905/caffe1-latte_oqfwoz.jpg",
+        "CaffeName" : "CAFFE LATTE" ,
+        "CaffeDesc":"Fresh brewed coffee and steamed milk",
+        "CaffePrice":"$2.95",
+        "isNew": true
+    },
+    {
+        
+        "id":2,
+        "CaffeImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692150906/caffe-2-mocha_kv7xx4.jpg",
+        "CaffeName" : "CAFFE MOCHA" ,
+        "CaffeDesc":"Espresso With Milk, and Whipped Cream",
+        "CaffePrice":"$3.67",
+        "isNew": false
+        
+    },
+    {
+        
+        "id":3,
+        "CaffeImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692150906/caffe-3-white-chocolate_nf0lun.jpg",
+        "CaffeName" : "WHITE CHOCOLATE MOCHA" ,
+        "CaffeDesc":"Espresso, White Chocolate, Milk, Ice and Cream",
+        "CaffePrice":"$2.79",
+        "isNew": false
+    },
+    {
+        
+        "id":4,
+        "CaffeImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692150906/caffe4-americano_pxlnid.jpg",
+        "CaffeName" : "CAFFE AMERICANO" ,
+        "CaffeDesc":"Espresso Shots and Light Layer of Crema",
+        "CaffePrice":"$3.06",
+        "isNew": false
+    },
+    {
+        
+        "id":5,
+        "CaffeImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692150895/caffe-5-cappuccino_kkdv9l.jpg",
+        "CaffeName" : "CAPPUCCINO" ,
+        "CaffeDesc":"Espresso, and Smoothed Layer of Foam",
+        "CaffePrice":"$4.03",
+        "isNew": false
+    },
+    {
+        
+        "id":6,
+        "CaffeImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692150892/caffe-6-vanilla_intlyp.jpg",
+        "CaffeName" : "VANILLA LATTE" ,
+        "CaffeDesc":"Espresso Milk With Flavor,and Cream",
+        "CaffePrice":"$3.65",
+        "isNew": false
+    },
+    {
+        
+        "id":7,
+        "CaffeImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692150888/caffe-7-ice-caramel_gog74i.jpg",
+        "CaffeName" : "ICED CARAMEL LATTE" ,
+        "CaffeDesc":"Espresso, Milk, Ice and Caramel Sauce",
+        "CaffePrice":"$4.67",
+        "isNew": true
+    },
+    {
+        
+        "id":8,
+        "CaffeImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692150814/caffe-8-espresso-macchiato_nrom7f.jpg",
+        "CaffeName" : "ESPRESSO MACCHIATO" ,
+        "CaffeDesc":"Rich Espresso With Milk and Foam",
+        "CaffePrice":"$2.98",
+        "isNew": false
+    },
+    {
+        
+        "id":9,
+        "CaffeImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692150809/caffe-9-caramel-cacchiato_r0w3ul.jpg",
+        "CaffeName" : "CARAMEL MACCHIATO" ,
+        "CaffeDesc":"Espresso, vanilla-flavored syrup and milk",
+        "CaffePrice":"$2.54",
+        "isNew": false
+    },
+    {
+        
+        "id":10,
+        "CaffeImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692150806/caffe-10-iced-smoked_gq67ct.jpg",
+        "CaffeName" : "ICED SMOKED LATTE" ,
+        "CaffeDesc":"Espresso, ice, with smoked butterscotch",
+        "CaffePrice":"$3.05",
+        "isNew": false
+    },
+    {
+        
+        "id":11,
+        "CaffeImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692150803/caffe11-iced-cafee-mocha_dibazl.jpg",
+        "CaffeName" : "ICED CAFFE MOCHA" ,
+        "CaffeDesc":"Espresso, bittersweet mocha sauce, milk and ice",
+        "CaffePrice":"$2.60",
+        "isNew": false
+    },
+    {
+        
+        "id":12,
+        "CaffeImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692150799/caffe-12-iced-ginderbread-latte_mu502h.jpg",
+        "CaffeName" : "ICED GINGERBREAD LATTE" ,
+        "CaffeDesc":"Espresso, Milk, Ice, and Gingerbread Flavor",
+        "CaffePrice":"$3.92",
+        "isNew": true
+    }
+
+]

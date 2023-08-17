@@ -1,0 +1,129 @@
+.vertical-swiper{
+    background-color: #fff;
+    padding: 0 100px 110px;
+
+    .vertical-left{
+        background-image: url(../../assets/images/vertical-swiper-imgs/left-side.jpg);
+        height: 60vh;
+        background-size: cover;
+        background-position: center;
+
+        .left-content{
+            padding: 70px 30px;
+            color: #fff;
+
+            .vertical-title{
+                font-size: 35px;
+                letter-spacing: 1px;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-family: var(--header-font);
+                line-height: 1.14286em;
+            }
+            .vertical-text{
+                font-size: 14px;
+                line-height: 26px;
+                margin: 40px 0 ;
+            }
+            
+            .vertical-link{
+                color:#fff ;
+                text-transform: uppercase;
+                font-family: var(--main-font);
+                font-size: 13px;
+                font-weight: 800;
+                line-height: 1.7em;
+                letter-spacing: 2.5px;
+                display: flex;
+                align-items: baseline;
+                padding: 15px 0;
+                .link-icon{
+                    padding-left: 5px;
+                    font-size: 17px;
+                    width: 30px;
+                    transition: all 0.4s ease;
+                }
+                &:hover .link-icon{
+                    margin-left: 6px;
+                }
+            }
+
+        }
+
+       
+    }
+
+    .vertical-right{
+        .mySwiper{
+            height: 58vh;
+            .vertical-slider-img{
+                object-fit: cover;
+            }
+        }
+        .swiper-pagination-bullet-active {
+            width:13px !important;
+            height: 13px !important;
+       }
+    }
+   
+}
+
+@media(max-width:1400px){
+
+}
+
+@media(max-width:1200px){
+    .vertical-swiper .mySwiper{
+        height: auto;
+    }
+    .vertical-left{
+            height: auto;
+        }
+
+}
+
+@media(max-width:768px){
+    .vertical-swiper{
+        padding: 20px 50px;
+        .vertical-left{
+            height: auto;
+        }
+        .mySwiper{
+            height: auto;
+        }
+        
+    }
+}
+
+@media(max-width:500px){
+    .vertical-swiper{
+        padding: 20px 20px;
+
+        .left-content{
+            padding: 40px 30px !important;
+
+            .vertical-title{
+                font-size: 28px !important;
+            }
+            .vertical-text{
+                line-height: 24px !important;
+                margin: 15px 0 !important;
+            }
+            
+            .vertical-link{
+                font-size: 13px;
+                padding: 10px 0;
+                
+            }
+
+        }
+        .mySwiper{
+            height: 30vh !important;
+        }
+        
+    }
+}
+
+
+
+

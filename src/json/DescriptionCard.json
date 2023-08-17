@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "CardImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692033199/home-1-blog-f-img-1_ba1ldq.jpg",
+        "CardDescripton" : "by Jane Doe / Competition / 23.02.2016" ,
+        "CardTitle":"BEAUTIFUL PLACE",
+        "CardText":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat dictum lacus, ut hendrerit mi pulvinar vel. Fusce id nibh at neque eleifend tristiqu..."
+    },
+    {
+        "id":2,
+        "CardImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692033340/home-1-blog-f-img-2_zmdlsu.jpg",
+        "CardDescripton" : "by Jane Doe / Competition / 23.02.2017" ,
+        "CardTitle":"coffee shop",
+        "CardText":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat dictum lacus, ut hendrerit mi pulvinar vel. Fusce id nibh at neque eleifend tristiqu..."
+    },
+    {
+        "id":3,
+        "CardImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692033382/home-1-blog-f-img-3_kwgz50.jpg",
+        "CardDescripton" : "by Jane / Doe Competition / 23.02.2015" ,
+        "CardTitle":"coffee bar",
+        "CardText":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat dictum lacus, ut hendrerit mi pulvinar vel. Fusce id nibh at neque eleifend tristiqu..."
+    }
+]

@@ -1,0 +1,28 @@
+@mixin links($color , $p){
+    color: $color;
+    padding: $p;
+    text-transform: uppercase;
+    font-family: var(--main-font);
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1.7em;
+    letter-spacing: 2.5px;
+    display: flex;
+    align-items: baseline;
+    .link-icon{
+        padding-left: 5px;
+        font-size: 17px;
+        width: 30px;
+    }
+}
+
+
+@mixin h1 ($color, $size) {
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: var(--header-font);
+    
+}
+    
+

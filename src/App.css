@@ -1,0 +1,67 @@
+:root {
+     --main-font:'Open Sans', sans-serif;
+     --italic-font:'Merriweather', serif;
+     --header-font:'Oswald', sans-serif;
+     --secondary-font:'Roboto', sans-serif;
+     --main-color:#c7a17a;
+     --secondary-color:#30271C;
+     --bg-color:#EAE7DE;
+     --divider-border-style: solid;
+     --divider-color: #C7A17A;
+     --divider-border-width: 2px;
+   }
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+img {
+  width: 100%;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+
+
+
+::-moz-selection {
+  background: var(--main-color);
+  color: #fff;
+}
+
+::selection {
+  background: var(--main-color);
+  color: #fff;
+}

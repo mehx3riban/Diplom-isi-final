@@ -1,0 +1,9 @@
+.navigation-bar{
+    background-color: lightpink;
+    padding: 0 25px;
+    display: flex;
+}
+.navigation-bar .navbar__logo img{
+    width: 96px;
+    height: 29;
+}

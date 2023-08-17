@@ -1,0 +1,38 @@
+  
+  .animation, .animation_layer {
+      height: 55vh;
+  }
+  
+  .animation {
+    display: block;
+      /* position: relative; */
+      z-index: 10;
+  }
+  
+  .animation_layer {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      /* position: absolute; */
+  }
+  .animation_layer.parallax {
+      position: fixed;
+  }
+  
+  #artback {
+    background-image: url(../../assets/images/headers-images/Team-title-area-parallax-img-2.jpg);
+  }
+  
+#text{
+    font-family: var(--header-font);
+    font-size: 33px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    height: 55vh;
+    color: #fff;
+}
+ 

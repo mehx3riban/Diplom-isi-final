@@ -1,0 +1,17 @@
+.number-cards{
+    background-color:var(--bg-color) ;
+    padding: 0 90px;  
+    margin: 90px 0;  
+}
+
+@media (max-width:1200px){
+    .number-cards{
+        padding: 0 50px;   
+    }
+}
+
+@media (max-width:992px){
+    .number-cards{
+        padding: 0 20px;   
+    }
+}

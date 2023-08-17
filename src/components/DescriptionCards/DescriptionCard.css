@@ -1,0 +1,15 @@
+.description-cards {
+  background-color: #fff;
+  padding: 90px 90px !important;
+}
+
+@media (max-width: 1200px) {
+  .description-cards {
+    padding: 50px 50px !important;
+  }
+}
+@media (max-width: 992px) {
+  .description-cards {
+    padding: 40px 20px !important;
+  }
+}/*# sourceMappingURL=DescriptionCard.css.map */

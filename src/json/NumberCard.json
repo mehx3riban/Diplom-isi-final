@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "CardImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1691827790/h-1-img-1_hvydwm.jpg",
+        "CardNumber" : "01" ,
+        "CardTitle":"BEAUTIFUL PLACE",
+        "CardText":"Alienum phaedrum to rquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix atle."
+    },
+    {
+        "id":2,
+        "CardImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1691827793/h-1-img-2_lviw5x.jpg",
+        "CardNumber" : "02" ,
+        "CardTitle":"FEEL THE COFFEE",
+        "CardText":"Alienum phaedrum to rquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix atle."
+    },
+    {
+        "id":3,
+        "CardImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1691827802/h-1-img-3_pghpu1.jpg",
+        "CardNumber" : "03" ,
+        "CardTitle":"FULL TASTE",
+        "CardText":"Alienum phaedrum to rquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix atle."
+    }
+]
