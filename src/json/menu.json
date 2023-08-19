@@ -51,7 +51,7 @@
         "CaffeName" : "VANILLA LATTE" ,
         "CaffeDesc":"Espresso Milk With Flavor,and Cream",
         "CaffePrice":"$3.65",
-        "isNew": false
+        "isNew": true
     },
     {
         
@@ -60,7 +60,7 @@
         "CaffeName" : "ICED CARAMEL LATTE" ,
         "CaffeDesc":"Espresso, Milk, Ice and Caramel Sauce",
         "CaffePrice":"$4.67",
-        "isNew": true
+        "isNew": false
     },
     {
         
@@ -105,7 +105,8 @@
         "CaffeName" : "ICED GINGERBREAD LATTE" ,
         "CaffeDesc":"Espresso, Milk, Ice, and Gingerbread Flavor",
         "CaffePrice":"$3.92",
-        "isNew": true
+        "isNew": false
     }
 
 ]
+

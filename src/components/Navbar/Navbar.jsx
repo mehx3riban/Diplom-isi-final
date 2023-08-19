@@ -1,8 +1,9 @@
 import React ,{useState} from 'react'
 import logo from '../../assets/images/logo.png'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+// import { NavNavLink } from 'react-router-dom'
 import './Navbar.css'
-import Dropdown from './Dropdown'
+// import Dropdown from './Dropdown'
 import {FaBars,FaTimes} from "react-icons/fa"
 const Navbar = () => {
 
@@ -10,9 +11,23 @@ const Navbar = () => {
   return (
     <>
       <nav className='navigation-bar'>
-        <Link to='/' className='navbar__logo'>
-          <img src={logo} alt="app logo" />
-        </Link>
+        
+      <div className="navbar-logo">
+        <NavLink to="/">
+          <img src={logo} alt="" />
+        </NavLink>
+      </div>
+      
+        <div className="navbar-links">
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/menu">Menu</NavLink>
+          <NavLink to="/reservation">Reservation</NavLink>
+          <NavLink to="/pages">Pages</NavLink>
+          <NavLink to="/contact">Blog</NavLink>
+          <NavLink to="/shop">Shop</NavLink>
+        </div>
+      
+      
 
         
       </nav>

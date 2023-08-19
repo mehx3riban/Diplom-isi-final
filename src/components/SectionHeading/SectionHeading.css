@@ -1,5 +1,5 @@
 .section-heading{
-    padding: 90px 0;
+    /* padding: 90px 0; */
     text-align: center;
     padding-bottom: 20px;
 }
@@ -14,7 +14,7 @@
     line-height: 27px;
     text-transform: capitalize;
     /* padding: 90px 0 17px 0; */
-    padding-bottom: 17px;
+    padding-bottom: 15px;
 }
 
 .section-heading_h2{
@@ -23,7 +23,7 @@
     font-size: 35px;
     font-weight: 700;
     text-transform: uppercase;
-    padding-bottom: 23px;
+    padding-bottom: 18px;
     
 }
 
@@ -35,6 +35,10 @@
 .divider-light{
     width: 120px;
     border-bottom: var(--divider-border-width) var(--divider-border-style) #fff ;
+}
+.divider-brown-left{
+    width: 120px;
+    border-bottom: 3px var(--divider-border-style) var(--main-color) ;
 }
 .dark {
     color: var(--secondary-color);
@@ -57,5 +61,11 @@
 @media(max-width:768px){
     .section-heading-left{
         text-align: center !important;
+    }
+    .divider-brown-left{
+        margin: 0 auto;
+    }
+    .section-heading_h2{
+        font-size: 28px;    
     }
 }

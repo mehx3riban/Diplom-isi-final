@@ -65,3 +65,20 @@ img {
   background: var(--main-color);
   color: #fff;
 }
+
+/* ================ helper class============== */
+
+.class-p{
+  color: #666;
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.class-h2{
+  font-family: var(--header-font);
+  letter-spacing: 1px;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+}

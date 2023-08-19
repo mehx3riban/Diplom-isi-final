@@ -1,16 +1,17 @@
-.headerClass{
+.headerClass img{
     /* width: 100vw; */
-    height: 55vh;
-    background-size:cover !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
+    height: 60vh;
+    /* background-size:contain !important;
+    background-repeat: no-repeat !important; */
+    /* background-position: center !important; */
+    object-fit: cover !important;
 }
 
 .header-content{
     display: flex;
     align-items: center ;
     justify-content: center;
-    height: 55vh;
+    height: 60vh;
     color: white;   
     text-align: center;
     background-color: rgba(0, 0, 0, 0.2);
@@ -27,12 +28,3 @@
 
 
 
-/* .bgabout{
-
-}
-
-
-.para{
-    background-position: center !important;
-    background-size: cover !important;
-} */

@@ -159,6 +159,8 @@ const Menu = () => {
               menuMelumatlari.map((birMenuMelumati) => (
                 <div className="col-12 col-md-12 col-lg-6 menu-col ">
                   <Caffe
+                    caffeClassAdi=' white-text'
+                    CaffeDivLine='div-line-light'
                     newInMenu={ birMenuMelumati.isNew ? 'New' : '' }
                     caffeImg={birMenuMelumati.CaffeImg}
                     caffeName={birMenuMelumati.CaffeName}

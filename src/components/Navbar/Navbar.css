@@ -1,9 +1,29 @@
-.navigation-bar{
+.navigation-bar {
     background-color: lightpink;
-    padding: 0 25px;
     display: flex;
-}
-.navigation-bar .navbar__logo img{
+    align-items: baseline;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 25px;
+    color: white;
+  }
+  
+  .navbar-logo{
     width: 96px;
-    height: 29;
-}
+  }
+  
+  .navbar-links {
+    display: flex;
+  }
+  
+  .navbar-links  a {
+    display: block;
+    padding: 0 17px;
+    color: white;
+    font-size: 15px;
+    /* line-height: 22px; */
+    font-weight: 700;
+    font-family: var(--header-font);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }

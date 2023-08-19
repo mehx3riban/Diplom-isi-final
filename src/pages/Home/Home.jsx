@@ -9,7 +9,7 @@ import VerticalSwiper from '../../components/VerticalSwiper/VerticalSwiper'
 import Menu from '../../components/MenuSection/Menu'
 import Gallery from '../../components/Gallery-section/Gallery'
 import DescriptionCards from '../../components/DescriptionCards/DescriptionCards'
-import Footer from '../../components/Footer/Footer'
+import Navbar from '../../components/navbar/Navbar'
 const Home = () => {
   return (
     <div>
@@ -23,7 +23,6 @@ const Home = () => {
         <Menu/>
         <Gallery/>
         <DescriptionCards/>
-        <Footer/>
 
     </div>
   )

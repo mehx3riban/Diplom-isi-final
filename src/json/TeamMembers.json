@@ -1,0 +1,42 @@
+[
+    {
+        "id":1,
+        "MemberCardImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692346101/Team-img-1_rbkjry.jpg",
+        "MemberName":"FEDERICO HICKMAN",
+        "MemberPosition" : "Owner, Barista" ,
+        "MemberCardText":"Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis vix."
+    },
+    {
+        "id":2,
+        "MemberCardImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692346111/Team-img-2_vrjpox.jpg",
+        "MemberName":"GWILYM DAVIES",
+        "MemberPosition" : "Owner, Barista" ,
+        "MemberCardText":"Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis vix."
+    },
+    {
+        "id":3,
+        "MemberCardImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692346113/Team-img-3_xrby33.jpg",
+        "MemberName":"ALEJANDRO MENDEZ",
+        "MemberPosition" : "Owner, Barista" ,
+        "MemberCardText":"Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis vix."
+    },
+    {
+        "id":4,
+        "MemberCardImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692346113/Team-img-4_bevffu.jpg",
+        "MemberName":"FEDERICO HICKMAN",
+        "MemberPosition" : "Owner, Barista" ,
+        "MemberCardText":"Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis vix."
+    }, {
+        "id":5,
+        "MemberCardImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692346114/Team-img-6_fyhgh2.jpg",
+        "MemberName":"GWILYM DAVIES",
+        "MemberPosition" : "Owner, Barista" ,
+        "MemberCardText":"Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis vix."
+    }, {
+        "id":6,
+        "MemberCardImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692346115/Team-img-5_gazs7a.jpg",
+        "MemberName":"ALEJANDRO MENDEZ",
+        "MemberPosition" : "Owner, Barista" ,
+        "MemberCardText":"Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis vix."
+    }
+]

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Caffe.scss'
-const Caffe = ({caffeImg,caffeName,caffeDesc,caffePrice,newInMenu}) => {
+const Caffe = ({caffeImg,caffeName,caffeDesc,caffePrice,newInMenu,caffeClassAdi,CaffeDivLine}) => {
   return (
     <div>
         <div className='bir-caffe'>
@@ -11,9 +11,9 @@ const Caffe = ({caffeImg,caffeName,caffeDesc,caffePrice,newInMenu}) => {
             </div>
 
             <div className='col-8 col-md-10 col-lg-9'>
-                <div className='name-price d-flex justify-content-between align-items-baseline '>
-                    <h3 className='caffe-name'>{caffeName}</h3>
-                    <div className='div-line  '></div>
+                <div className= {`name-price d-flex justify-content-between align-items-baseline ${caffeClassAdi}`}>
+                    <h3 className='caffe-name' >{caffeName}</h3>
+                    <div className={ ` div-line ${CaffeDivLine}`}></div>
                     <h3 className='caffe-price'>{caffePrice}</h3>
                 </div>
 

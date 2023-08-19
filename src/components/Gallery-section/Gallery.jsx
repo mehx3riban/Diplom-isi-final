@@ -17,14 +17,17 @@ const Gallerysec = () => {
         <img src={img1}  className='img img1' />
         {/* <div className="overlay"></div> */}
       </div>
+
       <div className="gallery-item">
         <img src={img2}  className='img img2'/>
         <img src={img3} className='img img3' />
       </div>
+
       <div className="gallery-item res">
         <img src={img4}  className='img img4'/>
         <img src={img5}  className='img img5'/>
       </div>
+      
       <div className="gallery-item big">
         <img src={img6}  className='img img6' />
       </div>
