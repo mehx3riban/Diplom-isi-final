@@ -3,7 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
-import { Autoplay,  Navigation } from 'swiper/modules';
+import 'swiper/css/effect-fade';
+import { Autoplay,  Navigation,EffectFade } from 'swiper/modules';
 import './Introduction.css'
 
 import Slider from './Slider';
@@ -19,11 +20,12 @@ import bgImage3 from "../../assets/images/intro-images/home-1-slider-4.jpg"
 
 
 const Introduction = () => {
-  
+
   return (
     <div>
       
     <Swiper
+    effect="fade"
         loop
         spaceBetween={30}
         centeredSlides={true}
@@ -34,7 +36,7 @@ const Introduction = () => {
         navigation={
           true
         }
-        modules={[Autoplay,  Navigation]}
+        modules={[Autoplay,  Navigation,EffectFade]}
         className="mySwiper"
       >
 

@@ -16,7 +16,7 @@ const OurMenu = () => {
   return (
 
     <div>
-        <PagesHeader headerImg={menuHeaderImg} headerText='Our menu' />
+        <PagesHeader headerImg={menuHeaderImg} headerText='Our menu' strength='200' />
         
         <div className='our-menu-section'>
 

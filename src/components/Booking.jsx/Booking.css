@@ -19,7 +19,7 @@ body{
     background-color: #fff;
     color: var(--main-color);
     font-size: 19px;
-    border-left: 2px solid var(--main-color);
+    border-left:  1px solid var(--main-color);
 }
 
 .react-datepicker__header {
@@ -90,7 +90,7 @@ display: none;
     background-color: #fff;
     color: var(--main-color);
     font-size: 19px;
-    border-left: 2px solid var(--main-color);
+    border-left: 1px solid var(--main-color);
 }
 
 .booking-content span{

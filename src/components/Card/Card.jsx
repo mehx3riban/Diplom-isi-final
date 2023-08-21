@@ -4,7 +4,7 @@ import {ImArrowRight2} from 'react-icons/im'
 const Card = ({cardImg ,cardNumber,cardDescription, cardTitle,h3classi, cardText }) => {
   return (
   <div className='col-12 col-md-4'>
-    <div className='kart'>
+    <div className='kart' >
 
     <div className="kart-img">
         <img src={cardImg}  alt="..."/>

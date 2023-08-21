@@ -12,7 +12,7 @@ import './contact.css'
 const Contact = () => {
   return (
     <>
-      <PagesHeader headerImg={ContactImg} headerText={'Contact Us'} />
+      <PagesHeader headerImg={ContactImg} headerText='Contact Us' strength='200' />
 
       <section className='contact-us bg-white'>
         <div className='row'>

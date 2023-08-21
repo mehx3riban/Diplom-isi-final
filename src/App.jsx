@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AOS from 'aos';
-import './mixin.scss'
 import'aos/dist/aos.css'
 import './App.css'
 
@@ -25,29 +24,32 @@ import OurMenu from './pages/OurMenu-page/OurMenu';
 import Contact from './pages/Contact-Page/Contact';
 import MeetOurTeam from './pages/MeetOurTeam-Page/MeetOurTeam';
 import NotFound from './pages/NotFound-Page/NotFound';
+import AboutMe from './pages/AboutMe-Page/AboutMe';
 
 function App() {
 
   useEffect(() => {
     AOS.init({
       duration : 2000
-    });
+    })
   }, []);
 
   return (
     
     <Router>
-      {/* <Navbar/> */}
-      {/* <Routes>
+      {/* <Navbar/>
+      <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='*' element={<NotFound/>} />
         <Route path='/menu' element={<OurMenu/>} />
         <Route path='/contact' element={<Contact/>} />
-
       </Routes> */}
 
-      <MeetOurTeam/>
-      {/* <Footer/> */}
+      {/* <AboutMe/> */}
+      <Home/>
+      {/* <MeetOurTeam/> */}
+      {/* <NotFound/> */}
+      <Footer/>
 
     </Router>
 

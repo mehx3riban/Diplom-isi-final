@@ -17,7 +17,7 @@ const MeetOurTeam = () => {
 })
   return (
     <div>
-         <PagesHeader headerImg={ourTeamHeaderImg} headerText='meet our team' />
+         <PagesHeader headerImg={ourTeamHeaderImg} strength='200' headerText='meet our team' />
          <div className='our-team-section'>
 
             <div className='row'>
