@@ -1,5 +1,5 @@
-import './Booking.css'
 import React, { useState } from "react";
+import './Booking.css'
 import DatePicker from "react-datepicker";
 import {FaCalendarAlt} from 'react-icons/fa'
 import {BsFillClockFill} from 'react-icons/bs'
@@ -14,7 +14,7 @@ import people from '../../json/people.json'
 
 // import Time from './Time'
 
-const BookingSection = () => {
+const Booking = () => {
   const [startDate, setStartDate] = useState(new Date());
 
   const defaultOption = { value: "10:00 AM", label: "10:00 AM" };
@@ -121,4 +121,4 @@ const BookingSection = () => {
   )
 }
 
-export default BookingSection
+export default Booking

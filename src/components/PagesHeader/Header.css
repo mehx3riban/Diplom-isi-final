@@ -1,9 +1,5 @@
 .headerClass img{
-    /* width: 100vw; */
     height: 60vh;
-    /* background-size:contain !important;
-    background-repeat: no-repeat !important; */
-    /* background-position: center !important; */
     object-fit: cover !important;
 }
 

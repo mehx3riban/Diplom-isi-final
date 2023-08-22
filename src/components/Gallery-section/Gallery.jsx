@@ -29,7 +29,7 @@ const Gallerysec = () => {
       </div>
       
       <div className="gallery-item big">
-        <img src={img6}  className='img img6' />
+        <img src={img6}  className='img gallery-item__img6' />
       </div>
     </div>
     </div>

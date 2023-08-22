@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useState,useEffect,useRef } from "react";
 import logo from "../../assets/images/mobile-menu-logo/logo-1.png";
-import logoMain from "../../assets/images/logo.png";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import { FaBars } from "react-icons/fa";
@@ -8,9 +7,9 @@ import { PiShoppingCartThin } from "react-icons/pi";
 import { BsSearchHeart } from "react-icons/bs";
 
 
-const Navbar = () => {
+const NavbarWhite = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
+
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -19,30 +18,38 @@ const Navbar = () => {
   const closeMenu = () => {
     setShowMenu(false);
   };
+// --------------------
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
+const [isHidden, setIsHidden] = useState(false);
+let lastScrollY = 0;
 
-    window.addEventListener("scroll", handleScroll);
+const handleScroll = () => {
+  const currentScrollY = window.scrollY;
+  if (lastScrollY < currentScrollY) {
+    setIsHidden(true);
+  } else {
+    setIsHidden(false);
+  }
+  lastScrollY = currentScrollY;
+};
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+useEffect(() => {
+  window.addEventListener('scroll', handleScroll);
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, []);
+
+  
 
   return (
     <>
-      <nav className={`navigation-bar ${isScrolled ? "scrolled " : ""}`}>
+    
+      <nav className={`navigation-bar-white ${isHidden ? 'nav--hidden' : ''}`}>
         <div className="nav-container">
           <div className="navbar-logo">
             <NavLink to="/">
-              <img src={isScrolled ? logo : logoMain} alt="" />
+              <img src={logo} alt="" />
             </NavLink>
           </div>
 
@@ -100,4 +107,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarWhite;

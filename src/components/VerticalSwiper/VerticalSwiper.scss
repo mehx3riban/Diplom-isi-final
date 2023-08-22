@@ -1,10 +1,10 @@
 .vertical-swiper{
     background-color: #fff;
-    padding: 0 100px 110px;
+    padding: 50px 100px 110px;
 
     .vertical-left{
         background-image: url(../../assets/images/vertical-swiper-imgs/left-side.jpg);
-        height: 60vh;
+        max-height: 60vh;
         background-size: cover;
         background-position: center;
 
@@ -68,28 +68,57 @@
    
 }
 
-@media(max-width:1400px){
-
+@media(max-width:1300px){
+    .vertical-right{
+        .mySwiper{
+            height: 58vh;
+            .vertical-slider-img{
+                object-fit: cover;
+                width: 600px;
+            }
+        }
+         img{
+            height: 500px;
+        }
+    }
 }
 
 @media(max-width:1200px){
-    .vertical-swiper .mySwiper{
+    .vertical-swiper{
+        padding: 50px 50px 110px;
+        
+    }
+    .vertical-swiper .mySwiper img{
         height: auto;
     }
-    .vertical-left{
-            height: auto;
-        }
 
+}
+
+@media(max-width:992px){
+    .vertical-right{
+        .mySwiper{
+            height: 58vh;
+            .vertical-slider-img{
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media(max-width:768px){
     .vertical-swiper{
         padding: 20px 50px;
         .vertical-left{
-            height: auto;
-        }
-        .mySwiper{
-            height: auto;
+            max-height: 40vh !important;
+            width: 100%;
+            .vertical-title{
+                font-size: 23px !important;
+            }
+            .vertical-text{
+                display: none;
+                
+            }
         }
         
     }
@@ -97,28 +126,31 @@
 
 @media(max-width:500px){
     .vertical-swiper{
-        padding: 20px 20px;
+        padding: 20px 20px 40px;
 
         .left-content{
-            padding: 40px 30px !important;
+            padding: 50px 20px 10px !important;
 
             .vertical-title{
-                font-size: 28px !important;
+                padding-bottom: 30px;
             }
             .vertical-text{
-                line-height: 24px !important;
+                line-height: 22px !important;
                 margin: 15px 0 !important;
+                display: none;
+                
             }
             
             .vertical-link{
                 font-size: 13px;
-                padding: 10px 0;
+                padding: 10px 0 5px !important;
                 
             }
 
         }
         .mySwiper{
-            height: 30vh !important;
+            height: 40vh !important;
+            width: 100% !important;
         }
         
     }

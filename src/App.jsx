@@ -11,7 +11,7 @@ import { BrowserRouter as Router , Routes, Route } from "react-router-dom";
 import Navbar from './components/navbar/Navbar'
 import Introduction from './components/intoduction/Introduction';
 import Footer from './components/Footer/Footer';
-import BookingSection from './components/Booking.jsx/BookingSection'
+import BookingSection from './components/Booking.jsx/Booking'
 import NumberCards from './components/NumberCards/NumberCards';
 import Application from './components/Application/Application';
 import CoffeeMachine from './components/CoffeeMachines/CoffeeMachines';
@@ -25,6 +25,7 @@ import Contact from './pages/Contact-Page/Contact';
 import MeetOurTeam from './pages/MeetOurTeam-Page/MeetOurTeam';
 import NotFound from './pages/NotFound-Page/NotFound';
 import AboutMe from './pages/AboutMe-Page/AboutMe';
+import GalleryPage from './pages/Gallery-Page/GalleryPage';
 
 function App() {
 
@@ -43,12 +44,12 @@ function App() {
         <Route path='*' element={<NotFound/>} />
         <Route path='/menu' element={<OurMenu/>} />
         <Route path='/contact' element={<Contact/>} />
+        <Route path='/gallery' element={<GalleryPage/>} />
+        
       </Routes> */}
 
-      {/* <AboutMe/> */}
-      <Home/>
-      {/* <MeetOurTeam/> */}
-      {/* <NotFound/> */}
+      {/* <Home/> */}
+      <GalleryPage/>
       <Footer/>
 
     </Router>

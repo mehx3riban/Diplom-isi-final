@@ -16,8 +16,8 @@ const Slider = ({bgImage, sliderIcon ,sliderTitle ,sliderText}) => {
                 <div className='textDiv'>
                     <p >{sliderText}</p>
                 </div>
-                <Button   icindekiYazi='read more' classAdi='btn-transparent intro-btn'/>
-                {/* buttonun aousu qalib */}
+                <Button to='/'   icindekiYazi='read more' classAdi='btn-transparent intro-btn'/>
+                
                 <div className='custom-shape-divider-bottom-1691475425' >
                     <svg  preserveAspectRatio="none" width="100%" height="27px" viewBox="0 0 1920 27" enableBackground="new 0 0 1920 27"><path className='shape-fill' d="M1906.688,12.029c-1.653-1.78-3.943-0.347-5.823-0.883c-0.623,0.442-0.879,1.208-1.873,1.044
                     c-1.992-1.974-5.01-1.6-7.448-2.713c-0.417,0.074-0.441,0.997-1.238,0.33c-0.103-0.113-0.323-0.356-1.033-1.142

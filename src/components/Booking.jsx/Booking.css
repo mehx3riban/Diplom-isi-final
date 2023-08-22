@@ -3,7 +3,7 @@ body{
 }
 
 .booking-content{
-    padding: 80px 90px 20px ;
+    padding: 70px 90px 0 ;
 
 }
 
@@ -134,7 +134,12 @@ display: none;
     width: 250px !important;
   }
 
-   
 
 }
 
+@media(max-width:768px){
+  .booking-content{
+    padding: 40px 20px 10px !important;  
+    
+  }
+}

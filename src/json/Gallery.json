@@ -1,0 +1,64 @@
+[
+    {
+        "GalleryId": 1,
+        "GalleryName" : "TRADITIONAL COFFEE",
+        "GalleryText" : "coffee",
+        "GalleryImg" : "https://res.cloudinary.com/dhu66lopl/image/upload/v1692724759/h6-featured-1_qgwm50.jpg",
+        "GalleryLink":"/gallery",
+        "GalleryH2Link":"/gallery"
+    },
+
+    {
+        "GalleryId": 2,
+        "GalleryName" : "INTERIOR IDEAS",
+        "GalleryText" : "coffee",
+        "GalleryImg" : "https://res.cloudinary.com/dhu66lopl/image/upload/v1692724764/h6-featured-2_asiver.jpg",
+        "GalleryH2Link":"/gallery"
+    },
+
+    {
+        "GalleryId": 3,
+        "GalleryName" : "MORNING HABITS",
+        "GalleryText" : "coffee",
+        "GalleryImg" : "https://res.cloudinary.com/dhu66lopl/image/upload/v1692724761/h6-featured-3_yzorbm.jpg",
+        "GalleryH2Link":"/gallery"
+    },
+
+    {
+        "GalleryId": 4,
+        "GalleryName" : "COFFEE DECORATIONS",
+        "GalleryText" : "coffee",
+        "GalleryImg" : "https://res.cloudinary.com/dhu66lopl/image/upload/v1692724763/h6-featured-4_tbmk5m.jpg",
+        "GalleryH2Link":"/gallery"
+    },
+
+    {
+        "GalleryId": 5,
+        "GalleryName" : "YOUR FAVORITE PLACE",
+        "GalleryText" : "coffee",
+        "GalleryImg" : "https://res.cloudinary.com/dhu66lopl/image/upload/v1692724770/h6-featured-5_nrvzqw.jpg",
+        "GalleryH2Link":"/gallery"
+    },
+
+    {
+        "GalleryId": 6,
+        "GalleryName" : "YOUR FAVORITE PLACE",
+        "GalleryText" : "coffee",
+        "GalleryImg" : "https://res.cloudinary.com/dhu66lopl/image/upload/v1692724767/h6-featured-6_ytzh5l.jpg",
+        "GalleryH2Link":"/gallery"
+    },
+    {
+        "GalleryId": 7,
+        "GalleryName" : "MORNING COFFEE",
+        "GalleryText" : "coffee",
+        "GalleryImg" : "https://res.cloudinary.com/dhu66lopl/image/upload/v1692724770/h6-featured-7_ehuslk.jpg",
+        "GalleryH2Link":"/gallery"
+    },  {
+        "GalleryId": 8,
+        "GalleryName" : "SWEET IDEAS",
+        "GalleryText" : "coffee",
+        "GalleryImg" : "https://res.cloudinary.com/dhu66lopl/image/upload/v1692724776/h6-featured-8_auzuvv.jpg",
+        "GalleryH2Link":"/gallery"
+    }
+
+]

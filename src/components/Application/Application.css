@@ -16,7 +16,10 @@
     width: 213px;
     /* padding-top: 40px; */
 }
+.app-left{
+    padding: 70px 0;
 
+}
 .app-left .app-text{
     color: #fff;
     font-size: 15px;
@@ -59,7 +62,7 @@
 }
 @media(max-width:992px){
     .app-content{
-        padding: 0 70px 50px;
+        padding: 0 50px 50px;
         }
     .section-heading_h2{
         font-size: 25px;
@@ -67,10 +70,12 @@
     .app-left .app-text{
         line-height: 23px;
         font-weight: 400;
-        padding-bottom: 25px;
+        padding-bottom: 29px;
     }
-    .app-right .app-logo{
-        width: 150px;
+    
+    .app-left{
+        padding: 70px 0;
+    
     }
 }
 @media(max-width:768px){
@@ -81,6 +86,9 @@
     /* .button{
     padding: 10px 20px;
     } */
+    .app-right .app-logo{
+        width: 150px;
+    }
     .section-heading-left{
     text-align: center !important;
     }

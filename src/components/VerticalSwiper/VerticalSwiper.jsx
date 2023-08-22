@@ -4,7 +4,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
-import { Pagination ,Autoplay} from 'swiper/modules';
+import 'swiper/css/effect-fade';
+import { Pagination ,Autoplay,EffectFade} from 'swiper/modules';
 import swiperImg1 from '../../assets/images/vertical-swiper-imgs/swiper-img.jpg'
 import swiperImg2 from '../../assets/images/vertical-swiper-imgs/swiper-img2.jpg'
 import swiperImg3 from '../../assets/images/vertical-swiper-imgs/swiper-img-3.jpg'
@@ -29,6 +30,7 @@ const VerticalSwiper = () => {
             </div>
             <div className='vertical-right col-12 col-lg-6 p-0'>
             <Swiper
+            effect="fade"
             style={{
                 "--swiper-pagination-color": "var(--main-color)",
                 "--swiper-pagination-bullet-inactive-color": "#fff",
@@ -47,7 +49,7 @@ const VerticalSwiper = () => {
            pagination={{
              clickable: true,
            }}
-           modules={[Pagination ,Autoplay]}
+           modules={[Pagination ,Autoplay,EffectFade]}
            className="mySwiper"
         
       >
