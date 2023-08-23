@@ -5,7 +5,9 @@ import axios from 'axios'
 import GalleryCard from './GalleryCard'
 import PagesHeader from '../../components/PagesHeader/PagesHeader'
 import galleryHeaderImg from '../../assets/images/headers-images/Contact-title.jpg'
-import NavbarWhite from '../../components/Navbar/NavbarWhite'
+import Navbar from '../../components/navbar/Navbar'
+
+
 
 const GalleryPage = () => {
   const [gelenMelumat , setGelenMelumat] = useState(null)
@@ -17,33 +19,25 @@ const GalleryPage = () => {
 
   return (
   <>
-    <NavbarWhite/>
-     {/* <PagesHeader headerImg={galleryHeaderImg} headerText='Barista Gallery' strength='200' /> */}
-     <div className=" gallery-header ">
-          <h2 className=' gallery-header__title '>Barista Gallery</h2>
-          <div className='gallery-header__span '>
-            <span>
-              <Link to='/' className='gallery-header__span' >Barista</Link> / Standard Two Columns
-            </span>
-          </div>
-        </div>
+    <Navbar/>
+     <PagesHeader classAdiTitle='header-content_title-33' classAdi='header-content-45' headerImg={galleryHeaderImg} headerText='Barista Gallery' strength='200' />
 
-    <div className='gallery-page'>
+    <div className='gallery-page  '>
 
-        <div className="container">
-          <div className="row">
-            {gelenMelumat && 
-              gelenMelumat.map((birMelumat) => (
-                <GalleryCard
-                
-                  galleryCardImg={birMelumat.GalleryImg}
-                  galleryCardName={birMelumat.GalleryName}
-                  galleryCardText={birMelumat.GalleryText}
-                />
-
-              ))}
+      
+        <div className="row">
+          {gelenMelumat && 
+            gelenMelumat.map((birMelumat) => (
+              <GalleryCard
               
-          </div>
+                galleryCardImg={birMelumat.GalleryImg}
+                galleryCardName={birMelumat.GalleryName}
+                galleryCardText={birMelumat.GalleryText}
+              />
+
+            ))}
+            
+          
         </div>
       
     </div>

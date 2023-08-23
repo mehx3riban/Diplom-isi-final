@@ -30,6 +30,9 @@
   color: var(--main-color);
 }
 
+.navigation-bar.scrolled .shopping-card{
+  border-left: 1px solid var(--secondary-color);
+}
 
 /* ------WhiteNavbar----- */
 .navigation-bar-white {
@@ -93,7 +96,7 @@
 
   }
   .shopping-card{
-    border-left: 1px solid #000;
+    border-left: 1px solid #fff;
     padding-left: 15px;
   }
   
@@ -109,7 +112,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
     font-family: var(--main-font);
   }

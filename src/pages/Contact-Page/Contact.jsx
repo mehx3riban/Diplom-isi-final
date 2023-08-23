@@ -13,7 +13,7 @@ import './contact.css'
 const Contact = () => {
   return (
     <>
-      <PagesHeader headerImg={ContactImg} headerText='Contact Us' strength='200' />
+      <PagesHeader classAdiTitle='header-content_title-33' classAdi='header-content-45' headerImg={ContactImg} headerText='Contact Us' strength='200' />
 
       <section className='contact-us bg-white'>
         <div className='row'>

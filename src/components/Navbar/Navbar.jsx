@@ -75,7 +75,7 @@ const Navbar = () => {
               Shop
             </NavLink>
 
-            <NavLink to="/shop" className="cart-container" onClick={closeMenu}>
+            <NavLink to="/shopcart" className="cart-container" onClick={closeMenu}>
               <div className="cart-container">
                 <div className="cart-counter">0</div>
                 <div className="shopping-card">

@@ -26,6 +26,10 @@ import MeetOurTeam from './pages/MeetOurTeam-Page/MeetOurTeam';
 import NotFound from './pages/NotFound-Page/NotFound';
 import AboutMe from './pages/AboutMe-Page/AboutMe';
 import GalleryPage from './pages/Gallery-Page/GalleryPage';
+import ShopCart from './components/ShopCart/ShopCart';
+import ShopPage from './pages/Shop-Page/ShopPage';
+import WhatWeOffer from './pages/OurProcess-Page/OurProcess';
+import OurProcess from './pages/OurProcess-Page/OurProcess';
 
 function App() {
 
@@ -38,18 +42,23 @@ function App() {
   return (
     
     <Router>
-      {/* <Navbar/>
-      <Routes>
+      {/* <Navbar/> */}
+      {/* <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='*' element={<NotFound/>} />
         <Route path='/menu' element={<OurMenu/>} />
         <Route path='/contact' element={<Contact/>} />
         <Route path='/gallery' element={<GalleryPage/>} />
+        <Route path='/shopcart' element={<ShopCart/>} />
+        <Route path='/our-process' element={<OurProcess/>} />
+        
         
       </Routes> */}
 
+      {/* <ShopPage/> */}
+      <OurProcess/>
       {/* <Home/> */}
-      <GalleryPage/>
+      {/* <GalleryPage/> */}
       <Footer/>
 
     </Router>

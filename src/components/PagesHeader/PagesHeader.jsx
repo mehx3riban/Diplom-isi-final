@@ -3,16 +3,16 @@ import { Parallax } from 'react-parallax';
 import Typed from 'react-typed';
 import './Header.css'
 
-const PagesHeader = ({headerImg,headerText ,strength}) => {
+const PagesHeader = ({classAdi,headerImg,headerText ,strength,classAdiTitle}) => {
   return (
     <div className=' headerClass'>
         <Parallax className='headerClass'   bgImage={headerImg} strength={strength}>
-          <div className='header-content'>
-                <Typed className='header-content_title'
+          <div className={`header-content ${classAdi}`}>
+                <Typed className={`header-content_title ${classAdiTitle}`}
                 strings={[
                     headerText,
                     ]}
-                    typeSpeed={70}
+                    typeSpeed={80}
                     backSpeed={40}
                     
                     loop >

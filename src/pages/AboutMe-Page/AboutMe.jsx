@@ -13,7 +13,7 @@ const AboutMe = () => {
   return (
     <div className='about-me-section'>
 
-        <PagesHeader headerImg={aboutMeImg} headerText='ABOUT ME' strength='200' />
+        <PagesHeader classAdiTitle='header-content_title-33' classAdi='header-content-45' headerImg={aboutMeImg} headerText='ABOUT ME' strength='200' />
 
         <div className='about-me-content'>
             <div className='row d-flex align-items-center'>

@@ -1,5 +1,5 @@
 .headerClass img{
-    height: 60vh;
+    height: 50vh;
     object-fit: cover !important;
 }
 
@@ -7,20 +7,37 @@
     display: flex;
     align-items: center ;
     justify-content: center;
-    height: 60vh;
+    /* height: 45vh; */
     color: white;   
     text-align: center;
     background-color: rgba(0, 0, 0, 0.2);
     background-size: cover;
   }
 
-.header-content_title{
-    font-family: var(--header-font);
-    font-size: 33px;
-    text-transform: uppercase;
-    font-weight: 700;
+.header-content-45{
+    height: 45vh;
+}
+.header-content-90{
+    height: 90vh;
 }
 
 
+.header-content_title{
+    font-family: var(--header-font);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.header-content_title-33{
+    font-size: 33px;
 
+}
+.header-content_title-55{
+    font-size: 55px !important;
+}
+
+@media(max-widht:768px){
+    .header-content_title{
+        font-size: 30px !important;
+    }
+}
 
