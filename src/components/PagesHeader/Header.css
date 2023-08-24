@@ -35,9 +35,9 @@
     font-size: 55px !important;
 }
 
-@media(max-widht:768px){
-    .header-content_title{
-        font-size: 30px !important;
+@media(max-width:768px){
+    .header-content_title-55{
+        font-size: 36px !important;
     }
 }
 

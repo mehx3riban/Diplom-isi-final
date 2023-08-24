@@ -1,29 +1,33 @@
 .our-process{
 
-
-    .our-process__div{
+    overflow-x: hidden;
+    .our-process-left{
         padding: 120px 90px;
 
         .process-img-left{
             padding-right: 20px;
-
         }
+        .content-right{
+            padding:  20px 20px 30px 60px;
+        }
+    }
+    .our-process-right{
+        padding: 120px 90px;
+
         .process-img-right{
             padding-left: 20px;
         }
+        .content-left{
+            padding: 20px 60px 30px 20px;
+        }
+    }
         .our-process__img{
             img{
                 width: 100%;
             }
         }
-        .content-right{
-            padding:  20px 20px 30px 60px;
-        }
-        .content-left{
-            padding: 20px 60px 30px 20px;
-        }
+        
         .our-process__content{
-            
 
             .process-h2{
                 color: #30271c;
@@ -48,44 +52,60 @@
 
     }
     
-}
+
 
 
 @media(max-width:1300px){
-    .our-process__div{
+   .our-process-right{
         padding: 90px 50px !important;
-
-        .our-process__content{
-            padding:  10px 10px 30px 20px !important;
-        }
-
     }
+    .our-process-left{
+        padding: 90px 50px !important;
+    }
+    .our-process__content{
+        padding:  10px 10px 30px 20px !important;
+    }
+
 }
 
 @media(max-width:992px){
-    .our-process__div{
-        padding: 90px 50px !important;
-        .our-process__img{
-            padding-right:0 !important;
-            padding-bottom: 20px;
-        }
-        .our-process__content{
-            padding:  10px 10px 30px 20px !important;
-             
-        }
-
+    .our-process-right{
+        padding: 30px 50px 70px!important;
     }
+    .our-process-left{
+        padding: 90px 50px 20px!important;
+    }
+    .our-process__img{
+        padding-right:0 !important;
+        padding-bottom: 20px;
+    }
+    .our-process__content{
+        padding:  10px 10px 30px 20px !important;
+            
+    }
+
 }
 @media(max-width:768px){
-    .our-process__div{
-        padding: 70px 20px 30px!important;
-        .our-process__img{
-            padding-right:0 !important;
-            padding-bottom: 20px;
-        }
-        .our-process__content{
-            padding:  10px 10px 30px 20px !important;
-        }
-
+    .our-process-right{
+        padding: 30px 10px 70px!important;
     }
+    .our-process-left{
+        padding: 90px 10px 20px!important;
+    }
+    .our-process__img{
+        padding-right:0 !important;
+        padding-bottom: 20px;
+    }
+    .our-process__content{
+        padding:  10px 10px 30px 20px !important;
+
+        .process-h2{
+            font-size: 28px;
+        }
+        .content-right{
+            padding:  20px 20px 0px 60px !important;
+        }
+        
+    }
+
 }
