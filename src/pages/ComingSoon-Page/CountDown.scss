@@ -1,0 +1,15 @@
+.count-down{
+    color: #fff;
+    font-family: var(--header-font);    
+
+    .count-time{
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .countdowns{
+        padding: 0 30px;
+        font-size: 85px;
+        font-weight: 700;
+    }
+}

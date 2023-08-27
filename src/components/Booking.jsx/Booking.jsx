@@ -47,7 +47,6 @@ const Booking = () => {
         cursor:'pointer'
       },
     }),
-    // Add more custom styles as needed
   };
   
 

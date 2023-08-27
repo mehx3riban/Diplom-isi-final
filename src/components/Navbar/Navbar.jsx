@@ -8,10 +8,12 @@ import { PiShoppingCartThin } from "react-icons/pi";
 import { BsSearchHeart } from "react-icons/bs";
 
 
+
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-
+  const [isMobile, setIsMobile] = useState(false);
+  
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
@@ -29,20 +31,32 @@ const Navbar = () => {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 992);
+    };
 
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
+ 
+
   return (
     <>
-      <nav className={`navigation-bar ${isScrolled ? "scrolled " : ""}`}>
+      <nav
+        className={`navigation-bar ${
+          isScrolled || isMobile ? "scrolled " : ""
+        }`}
+      >
         <div className="nav-container">
           <div className="navbar-logo">
             <NavLink to="/">
-              <img src={isScrolled ? logo : logoMain} alt="" />
+              <img src={isScrolled || isMobile ? logo : logoMain} alt="" />
             </NavLink>
           </div>
 
@@ -54,6 +68,8 @@ const Navbar = () => {
             <NavLink to="/menu" className="link-item" onClick={closeMenu}>
               Menu
             </NavLink>
+            
+            
 
             <NavLink
               to="/reservation"
@@ -63,7 +79,12 @@ const Navbar = () => {
               Reservation
             </NavLink>
 
+            
             <NavLink to="/pages" className="link-item" onClick={closeMenu}>
+            <div>
+              
+              
+            </div>
               Pages
             </NavLink>
 

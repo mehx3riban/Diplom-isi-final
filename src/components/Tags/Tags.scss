@@ -1,0 +1,25 @@
+.product-tags{
+    margin-top: 20px;
+    .product-tags__title{
+        font-family: var(--header-font);
+        font-size: 19px;
+        color: #30271c;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .tagname{
+        display: inline-block;
+        padding: 5px 10px;
+        margin: 5px 0;
+        font-family: var(--italic-font);
+        font-size: 16px;
+        // border: 1px solid red;
+        cursor: pointer;
+        transition: all .3s ease;
+
+        &:hover{
+            background-color: #ddd;
+        }
+        
+    }
+}

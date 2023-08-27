@@ -1,0 +1,44 @@
+.blog-page{
+    padding: 120px 90px;
+    background-color: #fff;
+
+    // ----------Blog-About---------
+    
+        .blog-about__h2{
+            font-size: 19px ;
+            border-bottom: 3px solid #ddd;
+            margin-bottom: 35px;
+            padding-bottom: 3px;
+        }
+
+        .blog-about__img-div{
+            width: 190px;
+            margin: 0 auto;
+            padding-bottom: 20px;
+            .blog-about__img{
+                width: 100%;
+            }
+
+        }
+    // ----------Recent Posts--------
+
+        .recent-post{
+            padding-bottom: 15px;
+
+            .recent-posts__img{
+                width: 100%;
+            }
+            .recent-post__title{
+                font-size: 16px;
+            }
+            .recent-post__date{
+                color: var(--main-color);
+                font-size: 14px;
+                font-family: var(--italic-font);
+            }
+        }
+    
+    
+    
+
+}

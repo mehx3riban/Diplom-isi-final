@@ -1,5 +1,5 @@
 .headerClass img{
-    height: 50vh;
+    height: 60vh;
     object-fit: cover !important;
 }
 
@@ -15,7 +15,7 @@
   }
 
 .header-content-45{
-    height: 45vh;
+    height: 55vh;
 }
 .header-content-90{
     height: 90vh;

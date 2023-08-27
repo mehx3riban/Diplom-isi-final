@@ -13,7 +13,12 @@ const OurMenu = () => {
       axios.get ('/src/json/menu.json')
       .then (menununGelenMelumati=> setMenuMelumatlari(menununGelenMelumati.data) )
     },[])
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
   return (
+    
 
     <div>
         <PagesHeader classAdiTitle='header-content_title-33' classAdi='header-content-45' headerImg={menuHeaderImg} headerText='Our menu' strength='200' />

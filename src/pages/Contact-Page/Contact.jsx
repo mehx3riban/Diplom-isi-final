@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import PagesHeader from '../../components/PagesHeader/PagesHeader'
 import ContactImg from '../../assets/images/headers-images/Contact-title.jpg'
 import Button from '../../components/Button/Button'
@@ -11,6 +11,10 @@ import './contact.css'
 
 
 const Contact = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <PagesHeader classAdiTitle='header-content_title-33' classAdi='header-content-45' headerImg={ContactImg} headerText='Contact Us' strength='200' />
@@ -63,7 +67,7 @@ const Contact = () => {
               >
                 {({ dirty, isSubmitting }) => (
                   <Form>
-                    <div className="form-group">
+                    <div className="form-group" data-aos="fade-up" data-aos-duration="1000" >
                       <Field
                         type="text"
                         id="name"
@@ -73,7 +77,8 @@ const Contact = () => {
                       />
                       <ErrorMessage name="name" component="div" className="error-message" />
                     </div>
-                    <div className="form-group">
+
+                    <div className="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                       <Field
                         type="text"
                         id="surname"
@@ -83,7 +88,8 @@ const Contact = () => {
                       />
                       <ErrorMessage name="surname" component="div" className="error-message" />
                     </div>
-                    <div className="form-group">
+
+                    <div className="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                       <Field
                         type="email"
                         id="email"
@@ -93,7 +99,8 @@ const Contact = () => {
                       />
                       <ErrorMessage name="email" component="div" className="error-message" />
                     </div>
-                    <div className="form-group">
+
+                    <div className="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                       <Field
                         type="text"
                         id="phone"
@@ -103,7 +110,8 @@ const Contact = () => {
                       />
                       <ErrorMessage name="phone" component="div" className="error-message" />
                     </div>
-                    <div className="form-group">
+
+                    <div className="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                       <Field
                         as="textarea"
                         id="message"
@@ -114,40 +122,17 @@ const Contact = () => {
                       />
                       <ErrorMessage name="message" component="div" className="error-message" />
                     </div>
-                    <button type="submit" disabled={!dirty || isSubmitting}>
-                      Submit
-                    </button>
+
+                    <div className='form-group d-flex justify-content-end pt-1 '>
+                      <button className='button-contact' type="submit" disabled={!dirty || isSubmitting}>
+                        send
+                      </button>
+                    </div>
+                    
                   </Form>
                 )}
               </Formik>
 
-
-              {/* <form action='' className='row gy-3 flex-column'>
-                <div className='form-group'>
-                  <input
-                    type='text'
-                    className='form-control'
-                    placeholder='Your Name'
-                  />
-                </div>
-                <div className='form-group'>
-                  <input
-                    type='text'
-                    className='form-control'
-                    placeholder='Your Email'
-                  />
-                </div>
-                <div className='form-group'>
-                  <textarea
-                    rows='10'
-                    className='form-control'
-                    placeholder='Your Message'
-                  />
-                </div>
-                <div className='form-group d-flex justify-content-end'>
-                  <Button icindekiYazi={'Send'} classAdi={'btn-brown-dark'} />
-                </div>
-              </form> */}
 
             </div>
           </div>
@@ -167,7 +152,7 @@ const Contact = () => {
             {/* ---Contact details---- */}
             <div className='contact-details'>
 
-              <div className='row align-items-start pt-2 pb-4'>
+              <div className='row align-items-start pt-2 pb-lg-4 pb-2 ' data-aos="fade-up" data-aos-duration="1000"  >
 
                 <div className='detail-item col-12 col-md-6 d-flex '>
                   <div className='mb-5'>
@@ -195,7 +180,7 @@ const Contact = () => {
 
               </div>
 
-              <div className='row align-items-start pb-4'>
+              <div className='row align-items-start pb-lg-4 pb-2' data-aos="fade-up" data-aos-duration="1000"  data-aos-delay="50" >
                 <div className='col-12 col-md-6 d-flex '>
                   <div className='mb-5'>
                     <FiPhone className='contact-icon' />
@@ -220,26 +205,26 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className='row align-items-start pb-4'>
+              <div className='row align-items-start pb-lg-4 pb-2 ' data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="100">
                 <div className='col-12 col-md-6 d-flex '>
                   <div className='mb-5'>
                     <HiOutlineMail className='contact-icon' />
                   </div>
-                  <div className='addres-detail pt-1'>
+                  <div className='addres-detail pt-1 mb-4'>
                     <h4 className='contact-detail-text mb-0'>EMAILS</h4>
                     <p className='mt-2'>
-                      barista@qodeinteractive.com barista@qode.com barista
+                      barista@qodeinteractive.com <br /> barista@qode.com barista
                     </p>
                   </div>
                 </div>
                 <div className='col-12 col-md-6 d-flex '>
-                  <div className='mb-5'>
+                  <div className='mb-5'>  
                     <HiOutlineMail className='contact-icon' />
                   </div>
-                  <div className='addres-detail pt-1'>
+                  <div className='addres-detail pt-1 '>
                     <h4 className='contact-detail-text mb-0'>EMAILS</h4>
                     <p className='mt-2'>
-                      barista@qodeinteractive.com barista@qode.com barista
+                      barista@qodeinteractive.com <br /> barista@qode.com barista
                     </p>
                   </div>
                 </div>

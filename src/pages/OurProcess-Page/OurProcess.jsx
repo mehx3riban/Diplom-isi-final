@@ -21,7 +21,7 @@ const OurProcess = () => {
 {/* -------------------DIV1--------------------- */}
 
         <div className='raw our-process-left bg-white '>
-          <div data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+          <div data-aos="fade-right" data-aos-duration="800" >
             <div className='row d-flex align-items-center'>
               <div className='col-12 col-lg-6 our-process__img process-img-left'>
                 <img src={div1Img} alt="" />
@@ -44,7 +44,7 @@ const OurProcess = () => {
 
 {/* -------------------DIV2--------------------- */}
         <div className='coffee-roastery our-process-right' >
-          <div data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+          <div data-aos="fade-left" data-aos-duration="800" >
             <div className='row d-flex align-items-center'>
 
               <div className='col-12 col-lg-6 our-process__content content-left'>
@@ -69,7 +69,7 @@ const OurProcess = () => {
 
         <div className='roasting our-process-left bg-white' >
 
-          <div data-aos="fade-right" data-aos-duration="800" data-aos-once="true" >
+          <div data-aos="fade-right" data-aos-duration="800"  >
               <div className='row d-flex align-items-center'>
                 <div className='col-12 col-lg-6 our-process__img process-img-left'>
                   <img src={div3Img} alt="" />
@@ -94,7 +94,7 @@ const OurProcess = () => {
 {/* -------------------DIV4--------------------- */}
 
         <div className='packaging  our-process-right' >
-          <div data-aos="fade-left" data-aos-duration="800" data-aos-once="true" >
+          <div data-aos="fade-left" data-aos-duration="800"  >
               <div className='row d-flex align-items-center'>
 
                 <div className='col-12 col-lg-6 our-process__content content-left'>

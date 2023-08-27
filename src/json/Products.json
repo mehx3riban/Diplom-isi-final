@@ -1,0 +1,100 @@
+[
+    {
+        "id":1,
+        "productImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692869832/product-image-1-633x633_xvz76a.jpg",
+        "productName":"Paper Pouch",
+        "productPrice":46.00,
+        "review":4.5,
+        "tag": "Paper Bag"
+    },
+    {
+        "id":2,
+        "productImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692869836/product-image-2-633x633_u9oiqi.jpg",
+        "productName":"Paper Bag ",
+        "productPrice":79.00,
+        "review":5,
+        "tag": "Paper Bag"
+    },
+    {
+        "id":3,
+        "productImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692869840/product-image-3-633x633_zed5vo.jpg",
+        "productName":"Plastic Pouch",
+        "productPrice":27.00,
+        "review":3,
+        "tag": "Paper Bag"
+    },
+    {
+        "id":4,
+        "productImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692869841/product-image-4-633x633_wexswr.jpg",
+        "productName":"Coffee Pot",
+        "productPrice":71.00,
+        "review":4,
+        "tag": "Coffee Pot"
+    },
+    {
+        "id":5,
+        "productImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692869844/product-image-5-633x633_jlxv34.jpg",
+        "productName":"Tea Pot",
+        "productPrice":54.00,
+        "review":3.9,
+        "tag": "Coffee Pot"
+    },
+    {
+        "id":6,
+        "productImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692869846/product-image-6-633x633_dhdvmv.jpg",
+        "productName":"Paper Cup",
+        "productPrice":31.00,
+        "review":4.8,
+        "tag": "Coffee Cup"
+    },
+    {
+        "id":7,
+        "productImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692869847/product-image-7-1-550x550_x98mjf.jpg",
+        "productName":"Choco Bites",
+        "productPrice":63.00,
+        "review":5,
+        "tag": "Choco Bites"
+
+    },
+    {
+        "id":8,
+        "productImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692869850/product-image-8-1-633x633_how8ww.jpg",
+        "productName":"Ground Coffee",
+        "productPrice":75.00,
+        "review":3.7,
+        "tag": "Ground Coffee "
+    },
+    {
+        "id":9,
+        "productImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692869851/product-image-9-1-633x633_b3bie1.jpg",
+        "productName":"Moka Pot",
+        "productPrice":18.00,
+        "review":2.6,
+        "tag": "Coffee Pot"
+    },
+    {
+        "id":10,
+        "productImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692869854/product-image-10-1-633x633_j3fexs.jpg",
+        "productName":"Cafe Bags",
+        "productPrice":29.00,
+        "review":5,
+        "tag": "Paper Bag"
+    },
+    {
+        "id":11,
+        "productImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692869856/product-image-11-1-633x633_vrwlpv.jpg",
+        "productName":"Tea Cup",
+        "productPrice":46.00,
+        "review":4.8,
+        "tag": "Coffee Cup"
+    },
+     {
+        "id":12,
+        "productImg":"https://res.cloudinary.com/dhu66lopl/image/upload/v1692869860/product-image-12-633x633_r6pp6a.jpg",
+        "productName":"Recycled Bags",
+        "productPrice":22.00,
+        "review":5,
+        "tag": "Paper Bag"
+    }
+
+]

@@ -1,10 +1,7 @@
 .contact-us {
   padding: 115px 90px 120px ;
 }
-.contact__map {
-  width: 100% !important;
-  height: 100% !important;
-}
+
 
 .contact-text {
   text-transform: uppercase;
@@ -30,6 +27,7 @@
 
 .form-group {
   padding-left: 0 !important;
+  padding-bottom: 10px;
 }
 
 .form-control {
@@ -38,16 +36,18 @@
   color: #c7a17a !important;
   border: 2px solid transparent !important;
   border-radius: 0%;
-  /* font-family: Merriweather, serif; */
+  font-family: var(--main-font);
   outline: 0 !important;
-  font-style: italic;
+  /* font-style: italic; */
   font-size: 14px;
   background-color: #f6f4ef;
-  color: #c7a17a !important;
+  color: var(--main-color) !important;
 }
 
+
+
 .form-control::placeholder {
-  color: #c7a17a !important;
+  color: var(--main-color) !important;
 }
 
 .form-control:focus {
@@ -55,6 +55,33 @@
   border-color: #c7a17a !important;
   background-color: none;
 }
+
+.error-message{
+  color: red;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+  .button-contact {
+    padding: 12px 33px;
+    text-transform: uppercase;
+    font-family: var(--main-font);
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1.7em;
+    letter-spacing: 2.5px;
+    transition: all 0.5s ease;
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    color: #fff;
+    /* cursor: pointer; */
+  }
+  
+  .button-contact:hover {
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+  }
+
 
 .contact-icon {
   color: #c7a17a;
@@ -78,11 +105,13 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  /* width: 50%; */
-  /* max-width: 140px; */
   line-height: 24px;
 }
 
+.contact__map {
+  width: 100% !important;
+  height: 100% !important;
+}
 
 @media(max-width:1200px){
   .contact-us {
@@ -90,8 +119,15 @@
   }
 }
 
+@media(max-width:992px){
+  .contact-heading > .location-text,
+ .write-us-text {
+  max-width: 100%;
+}
+}
 @media(max-width:768px){
   .contact-us {
-    padding: 70px 20px 80px ;
+    padding: 60px 10px 80px ;
   }
+
 }

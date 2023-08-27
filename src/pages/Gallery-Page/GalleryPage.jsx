@@ -17,9 +17,11 @@ const GalleryPage = () => {
     .then (melumat=>setGelenMelumat(melumat.data))
   },[])
 
+  
+
   return (
   <>
-    <Navbar/>
+
      <PagesHeader classAdiTitle='header-content_title-33' classAdi='header-content-45' headerImg={galleryHeaderImg} headerText='Barista Gallery' strength='200' />
 
     <div className='gallery-page  '>
