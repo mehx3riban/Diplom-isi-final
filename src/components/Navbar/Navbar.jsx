@@ -18,7 +18,11 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
+  // const [searchVisible, setSearchVisible] = useState(false);
 
+  // const toggleSearch = () => {
+  //   setSearchVisible(!searchVisible);
+  // };
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -157,7 +161,13 @@ const Navbar = () => {
 
             <NavLink className="navbar-search">
               <div className="navbar-search">
-                <BsSearchHeart size={20} />
+              {/* {!searchVisible ? (
+               <BsSearchHeart size={20} onClick={toggleSearch} />
+
+              ) : (
+                <FaTimes onClick={toggleSearch} />
+              )} */}
+              <BsSearchHeart size={20} />
               </div>
             </NavLink>
           </div>

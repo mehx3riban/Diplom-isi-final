@@ -151,9 +151,9 @@ const Application = () => {
                     <SectionHeading classAdiHeader='section-heading-left' classAdih4='text-white' sectionHeadingh4='Application' classAdih2='text-white' sectionHeadingh2='USE OUR APPLICATION.' classAdiDivider='divider-light' />
 
 
-                    <p data-aos="fade-left" data-aos-duration='1000' className='app-text'>Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et. Mea facilisis urbanitas moderatius.</p>
+                    <p   className='app-text'>Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et. Mea facilisis urbanitas moderatius.</p>
 
-                    <div data-aos="fade-left" >
+                    <div  >
                       <Button icindekiYazi='read more' classAdi='btn-brown-light '/>
 
                     </div>

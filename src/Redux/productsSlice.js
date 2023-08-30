@@ -19,13 +19,6 @@ export const  getProducts = createAsyncThunk (
   }
 )
 
-// export const  getTagProduct = createAsyncThunk (
-//   'getTagProduct',
-//   async(tag)=>{
-//    const response = await axios.get (`/src/json/Products.json/${tag}`);
-//     return response.data;
-//   }
-// )
 
 
 export const  getDetailProduct = createAsyncThunk (

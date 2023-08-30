@@ -7,8 +7,11 @@ const GalleryCard = ({galleryCardImg,galleryCardName,galleryCardText,galleryLink
                 <div className="gallery-card">
                    
                     <Link to={galleryLink}>
+                      <div className='gallery-card__img-div'>
 
-                        <img className='gallery-card__img' src={galleryCardImg} alt="" />
+                         <img className='gallery-card__img' src={galleryCardImg} alt="" />
+
+                      </div>
 
                     </Link>
                     

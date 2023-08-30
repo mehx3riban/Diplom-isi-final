@@ -10,8 +10,27 @@
                 width: 100%;
                 object-fit: cover;
             }
-
           
+        }
+
+        .custom-heading {
+            display: inline-block;
+            position: relative;
+            padding-bottom: 25px;
+
+            &::after {
+                content: '';
+                width: 0%;
+                height: 3px;
+                background-color: var(--main-color);
+                position: absolute;
+                left: 0;
+                top: 65%;
+                transition: all 0.4s;
+            }
+            &:hover::after {
+                width: 100%;
+            } 
         }
         .about-right-side{
             padding: 0 50px 0 30px ;

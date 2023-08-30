@@ -90,7 +90,7 @@ const Blog = () => {
                   <h2 className='class-h2 blog-about__h2 m-0 pt-5 mb-4 '>RECENT POSTS</h2>
                   <RecentPosts
                   recentPostImg={recentPost1}
-                  recentPostTitle='MAKE IT SIMPLE'
+                  recentPostTitle='MAKE IT SIMPle'
                   recentPostDate='23.4.2023'
                   />
                   <RecentPosts

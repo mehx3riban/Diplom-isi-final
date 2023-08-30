@@ -37,7 +37,9 @@ const IndexPage = () =>  {
     return (
       <div ref={elementRef}>
         <div className='scrollDist'></div>
-        <header className='header'>header</header>
+        <header className='header'>
+          
+        </header>
         <button className='button_field'>button</button>
       </div>
     )

@@ -109,3 +109,15 @@ img {
   font-weight: 700;
   text-transform: uppercase;
 }
+
+
+/* -------------------- */
+
+.pg-load{
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}

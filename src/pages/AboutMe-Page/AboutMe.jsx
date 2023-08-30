@@ -8,7 +8,6 @@ import { TiSocialInstagram } from "react-icons/ti";
 import {TiSocialTwitter } from "react-icons/ti";
 import { TiSocialFacebook } from "react-icons/ti";
 import { TiSocialTumbler } from "react-icons/ti";
-import Test from '../../components/Test/Test'
 
 const AboutMe = () => {
 
@@ -25,12 +24,13 @@ const AboutMe = () => {
             <div className='row d-flex align-items-center'>
 
                 <div className='about-left-side col-12 col-lg-6'>
-                    <img src={aboutMeLeftImg} alt="" />
+                    <img src={aboutMeLeftImg} alt="" data-aos="zoom-in-right" />
+                    <div className='layer'></div>
                 </div>
 
                 <div className='about-right-side col-12 col-lg-6'>
-                <h2 className='class-h2 about-h2'>FEDERICO HICKMAN</h2>
-                <p className='about-right-p'>
+                <h2 className='class-h2 about-h2 custom-heading' data-aos="fade-up">FEDERICO HICKMAN</h2>
+                <p className='about-right-p' data-aos="fade-up">
                 As a coffee aficionado, my journey began with a single cup of
                 inspiration. From that moment, I dedicated myself to mastering
                 the craft of brewing. With each pour, I strive to deliver a
@@ -40,14 +40,14 @@ const AboutMe = () => {
                 </p>
 
                 <div className='about-me-quote-div'>
-                <blockquote className='about-me-quote'>
+                <blockquote className='about-me-quote' data-aos="fade-up">
                     "Coffee is more than a beverage; it's a connection between
                     cultures and a celebration of craftsmanship. Every sip offers a
                     glimpse into a world of flavor and warmth."
                 </blockquote>
                 </div>
 
-                <p className='about-right-p'>
+                <p className='about-right-p' data-aos="fade-up">
                 Beyond the aroma and taste, coffee represents a journey through
                 time and geography. It's a medium that transcends borders,
                 bringing people together through shared moments of enjoyment. In
@@ -56,7 +56,7 @@ const AboutMe = () => {
                 tapestry of coffee's history with every cup.
                 </p>
 
-                    <div className='about-me-social '>
+                    <div className='about-me-social ' data-aos="fade-up">
                         <a  href="" className='about-me-social-a'  ><span ><TiSocialInstagram/></span></a>
 
                         <a  href="" className='about-me-social-a'><span ><TiSocialTwitter/></span></a>

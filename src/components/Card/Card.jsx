@@ -4,13 +4,14 @@ import {ImArrowRight2} from 'react-icons/im'
 import { Link } from 'react-router-dom'
 const Card = ({cardImg ,cardNumber,cardDescription, cardTitle,h3classi, cardText,to }) => {
   return (
-  <div className='col-12 col-md-4' data-aos="zoom-in-up">
+  <div className='col-12 col-md-4' data-aos="fade-up"
+  data-aos-anchor-placement="top-bottom">
     <div className='kart' >
 
-    <div className="kart-img">
+      <div className="kart-img">
         <img src={cardImg}  alt="..."/>
+        <div class="layer"></div>
       </div>
-
       <div className="kart-content">
 
       <div className={cardNumber && 'd-flex align-items-baseline'}>
