@@ -11,19 +11,23 @@ const ShopPage = () => {
 
     const [sort,setSort]= useState('')
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
   return (
     <div>
         
          <PagesHeader classAdiTitle='header-content_title-33' classAdi='header-content-45' headerImg={ShopHeaderImg} headerText='Shop' strength='200' />
         
         
-        <div className='shop-page__content'>
+        <div className='shop-page__content '>
             <div className='row'>
-                <div className='col-9'>
-                    <SortingProduct setSort={setSort}/>
+                <div className='col-12 col-md-9 col-lg-10'>
+                    {/* <SortingProduct setSort={setSort}/> */}
                     <Products sort={sort} />
                 </div>
-                <div className='col-3'>
+                <div className='col-12 col-md-3 col-lg-2'>
                     <Tags />
                 </div>
             </div>

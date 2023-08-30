@@ -16,7 +16,7 @@ const Menu = () => {
   },[])
 
   return (
-    <div className='menu-section'>
+    <div className='menu-section '>
          {/* ---------svg top------------- */}
          <div className='custom-shape-divider-top-1691475425-white' >
                     <svg  preserveAspectRatio="none" width="100%" height="27px" viewBox="0 0 1920 27" enableBackground="new 0 0 1920 27"><path className='shape-fill' d="M1906.688,12.029c-1.653-1.78-3.943-0.347-5.823-0.883c-0.623,0.442-0.879,1.208-1.873,1.044
@@ -148,7 +148,7 @@ const Menu = () => {
         </div>
 
 
-      <div>
+      <div className='pt-5'>
         <SectionHeading classAdih2='text-white'  sectionHeadingh2='FAVOURITE COFFEE FLAVOURS.' classAdih4='light' sectionHeadingh4='What Happens Here' classAdiDivider='divider-dark' />
       </div>
 
@@ -176,7 +176,7 @@ const Menu = () => {
       
       
             <div className='caffe-button'>
-            <Button   icindekiYazi='view menu' classAdi='btn-brown-light '/>
+            <Button to='/menu'  icindekiYazi='view menu' classAdi='btn-brown-light '/>
             </div>
 
       {/* ----------svg bottom--------- */}       

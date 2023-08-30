@@ -6,14 +6,20 @@ import "./Navbar.css";
 import { FaBars } from "react-icons/fa";
 import { PiShoppingCartThin } from "react-icons/pi";
 import { BsSearchHeart } from "react-icons/bs";
-
+import { useSelector } from "react-redux";
+import { motion } from 'framer-motion';
 
 
 const Navbar = () => {
+
+  const {cartTotalQuantity} = useSelector(state => state.cart)
+
   const [showMenu, setShowMenu] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  
+
+
+
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
@@ -44,7 +50,8 @@ const Navbar = () => {
     };
   }, []);
 
- 
+  
+
 
   return (
     <>
@@ -68,8 +75,6 @@ const Navbar = () => {
             <NavLink to="/menu" className="link-item" onClick={closeMenu}>
               Menu
             </NavLink>
-            
-            
 
             <NavLink
               to="/reservation"
@@ -79,16 +84,61 @@ const Navbar = () => {
               Reservation
             </NavLink>
 
-            
-            <NavLink to="/pages" className="link-item" onClick={closeMenu}>
-            <div>
-              
-              
-            </div>
-              Pages
-            </NavLink>
+            <div className="dropdown">
+              <div className="dropdown-title link-item">Pages</div>
+              <div className="dropdown-sehifeler  ">
+                <ul className="dropdown-items">
 
-            <NavLink to="/contact" className="link-item" onClick={closeMenu}>
+                  <li className="dropdown-item" >
+                    <NavLink 
+                    className="link-item dropdown-item" 
+                    to='/about' 
+                    onClick={closeMenu}>
+                      About Me
+                    </NavLink>
+                    </li>
+
+                  <li  className="dropdown-item">
+                    <NavLink 
+                    className="link-item dropdown-item" 
+                    to='/contact' 
+                    onClick={closeMenu}>
+                      Contact Us
+                    </NavLink>
+                  </li>
+                  
+                  <li className="dropdown-item">
+                    <NavLink 
+                    className="link-item dropdown-item" 
+                    to='/our-team' 
+                    onClick={closeMenu}>
+                      Meet Our Team 
+                    </NavLink>
+                  </li>
+                  
+                  <li className="dropdown-item">
+                    <NavLink 
+                    className="link-item dropdown-item" 
+                    to='/our-process' 
+                    onClick={closeMenu}>
+                      Our Process
+                    </NavLink>
+                  </li>
+
+                  <li className="dropdown-item">
+                    <NavLink 
+                    className="link-item dropdown-item" 
+                    to='/gallery' 
+                    onClick={closeMenu}>
+                      gallery
+                    </NavLink>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+
+            <NavLink to="/blog" className="link-item" onClick={closeMenu}>
               Blog
             </NavLink>
 
@@ -98,7 +148,7 @@ const Navbar = () => {
 
             <NavLink to="/shopcart" className="cart-container" onClick={closeMenu}>
               <div className="cart-container">
-                <div className="cart-counter">0</div>
+                <div className="cart-counter">{cartTotalQuantity}</div>
                 <div className="shopping-card">
                   <PiShoppingCartThin className="shop-icon" size={25} />
                 </div>

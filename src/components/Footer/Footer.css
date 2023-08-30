@@ -110,13 +110,14 @@
     border: 1px solid #ccc;
     border-radius: none;
     color: #fff;
+    padding: 10px 6px !important;
 }
 
 .footerContent .footer-contact__button{
     background-color: var(--main-color);
     border: none;
     color: #fff;
-    padding: 6px 10px 7px;
+    padding: 6px 10px 9px;
     margin-left: 5px;
     font-size: 17px;
 }
@@ -231,7 +232,7 @@
         padding-bottom: 3px;
     }
     .footer-top .footerContent{
-        padding: 40px 30px 20px !important;
+        padding: 40px 15px 20px !important;
     }
     .footerContent > div{
         padding-top: 20px;

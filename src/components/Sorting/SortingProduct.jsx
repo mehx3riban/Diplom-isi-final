@@ -2,7 +2,7 @@ import React from 'react'
 import './Sorting.scss'
 // import Select from 'react-select'
 
-const SortingProduct = ({setSort}) => {
+const SortingProduct = ({setSort,filerlenenProductSayi}) => {
 
     // const customStyles = {
     //     control: (provided, state) => ({
@@ -45,8 +45,8 @@ const SortingProduct = ({setSort}) => {
 
     return (
     <div className='mb-4 sort-section d-flex justify-content-between'>
-        <div>
-            show all products
+        <div className='filterlenmis-say'>
+            show all {filerlenenProductSayi} products
         </div>
         <div>
 

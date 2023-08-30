@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect,useState } from 'react';
 import './Products.scss'
 import { useDispatch, useSelector } from 'react-redux';
 import { getProducts } from '../../Redux/productsSlice';
@@ -8,13 +8,17 @@ import StarRating from '../StarRating/StarRating'
 import {LiaShoppingBagSolid} from 'react-icons/lia'
 import { addToCart } from '../../Redux/cartSlice';
 import { useNavigate } from 'react-router-dom';
+import SortingProduct from '../Sorting/SortingProduct';
 
 
-const Products = ({sort}) => {
+const Products = () => {
   const dispatch = useDispatch();
   const { products, productsStatus, selectedTag } = useSelector(
     (state) => state.products
   );
+
+  const [sort,setSort]= useState('')
+
 
   const navigate =useNavigate();
 
@@ -25,6 +29,8 @@ const Products = ({sort}) => {
   const filterlenmisProduct = selectedTag
     ? products.filter((product) => product.tag === selectedTag)
     : products;
+
+    const filterlenmisProductSayi = filterlenmisProduct.length;
 
     const sortingProducts =
     sort === 'inc'
@@ -39,7 +45,12 @@ const Products = ({sort}) => {
   }
     
   return (
+
     <div>
+
+      <SortingProduct filerlenenProductSayi={filterlenmisProductSayi} setSort={setSort}/>
+
+       <div>
       {productsStatus === 'LOADING' ? (
         <Loading />
       ) : (
@@ -81,6 +92,10 @@ const Products = ({sort}) => {
         </div>
       )}
     </div>
+    </div>
+  
+
+   
   );
 };
 

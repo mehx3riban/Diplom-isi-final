@@ -15,7 +15,7 @@ const NumberCards = () => {
   return (
 
 
-    <div className='number-cards'>
+    <div className='number-cards ' >
         <div className='row'>
 
         {cartMelumatlari &&
@@ -26,6 +26,7 @@ const NumberCards = () => {
         cardNumber={cartMelumati.CardNumber}
         cardTitle={cartMelumati.CardTitle}
         cardText={cartMelumati.CardText}
+        to='/our-process'
       />
     ))}
         </div>

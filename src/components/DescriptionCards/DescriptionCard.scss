@@ -1,16 +1,23 @@
-.description-cards{
-    background-color:#fff ;
-    padding: 90px 90px !important;   
+.description-cards-section{
+    padding-top: 65px;
+    background-color: #fff;
+
+    .description-cards{
+        background-color:#fff ;
+        padding: 45px 90px 90px ;   
+    }
 }
+
+
 
 @media (max-width:1200px){
     .description-cards{
-        padding: 50px 50px !important;   
+        padding: 50px  !important;   
     }
 }
 
 @media (max-width:992px){
     .description-cards{
-        padding: 40px 20px !important;   
+        padding: 40px 20px 40px !important;   
     }
 }

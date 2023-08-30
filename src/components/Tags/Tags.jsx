@@ -19,8 +19,8 @@ const Tags = () => {
   };
 
   return (
-    <div className="product-tags">
-      <h2 className="product-tags__title mb-2">TAGS</h2>
+    <div className="product-tags pt-4 ps-lg-4">
+      <h2 className="product-tags__title mb-2">categories</h2>
       {uniqueTags.map((tag, i) => (
         <div key={i}>
           <span onClick={() => handleTagClick(tag)} className="tagname">

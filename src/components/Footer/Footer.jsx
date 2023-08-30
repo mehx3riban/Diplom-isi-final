@@ -7,7 +7,8 @@ import { TiSocialTumbler } from "react-icons/ti";
 import { TiSocialVimeo } from "react-icons/ti";
 import { TiSocialLinkedin } from "react-icons/ti";
 import {BsCaretRightFill} from "react-icons/bs"
-
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import * as Yup from 'yup'
 
 
 const Footer = () => {
@@ -15,7 +16,7 @@ const Footer = () => {
     <div className='footerSection '>
         <div className='footer-top'>
             <div className='footerContent row '>
-                <div className='footerContent_div1 col-12 col-md-6 col-lg-3'>
+                <div className='footerContent_div1 col-12 col-md-6 col-lg-3 '>
                     <h4>OPENING HOURS</h4>
                     <div>
                          <div className=' d-flex justify-content-between align-items-baseline '>
@@ -57,7 +58,7 @@ const Footer = () => {
                        
                 </div>
 
-                <div className='footerContent_div2 col-12 col-md-6 col-lg-3'>
+                <div className='footerContent_div2 col-12 col-md-6 col-lg-3 '>
                     <h4>LATEST POSTS</h4>
                     <div className='latest-post'>
                         <div>
@@ -102,10 +103,52 @@ const Footer = () => {
                         
                         <h4 className='secondary-h4'>THE LAST STANDARD POST</h4>
                         <div className=' d-flex  '>
-                            <input className='footer-contact__input' type="email" placeholder='Your E-mail' />
-                            <button className='footer-contact__button'>
-                                <BsCaretRightFill/>
-                            </button>
+
+                        <div className="form-group ">
+                        <Formik 
+                        initialValues={{
+                        email: '',
+                        }}
+                        validationSchema={Yup.object({
+                        email: Yup.string()
+                        .email('Invalid email address')
+                        .matches(/^[a-zA-Z0-9._%+-]+@gmail\.com$/, 'Invalid email address')
+                        .required('Email is required'),
+                        })}
+                        onSubmit={(values, {resetForm,  setSubmitting }) => {
+                        console.log(values);
+                        setSubmitting(false);
+                        setTimeout(() => {
+                          resetForm();
+                        }, 1000);
+                        }}
+                    >
+                     {({ dirty, isSubmitting }) => (
+                    <Form  className=' d-flex align-items-baseline'>
+                    <div className="form-group">
+                        <Field
+                            type="email"
+                            id="email"
+                            name="email"
+                            className="form-control footer-contact__input"
+                            placeholder="Your Email"
+                        />
+                        <ErrorMessage name="email" component="div" className="error-message" />
+                        </div>
+
+                    <div className='form-group'>
+                      <button className='footer-contact__button' type="submit" disabled={!dirty || isSubmitting}>
+                      <BsCaretRightFill/>
+                      </button>
+                    </div>
+                    
+                  </Form>
+                )}
+                        </Formik>
+                        
+                        </div>
+                            
+                            
                         </div>
                     </div>
                 </div>

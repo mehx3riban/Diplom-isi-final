@@ -4,7 +4,8 @@
 
     .vertical-left{
         background-image: url(../../assets/images/vertical-swiper-imgs/left-side.jpg);
-        max-height: 60vh;
+        // max-height: 60vh;
+        // height: auto;
         background-size: cover;
         background-position: center;
 
@@ -75,6 +76,7 @@
             .vertical-slider-img{
                 object-fit: cover;
                 width: 600px;
+                height: 100%;
             }
         }
          img{
@@ -110,14 +112,10 @@
     .vertical-swiper{
         padding: 20px 50px;
         .vertical-left{
-            max-height: 40vh !important;
+            // max-height: 40vh !important;
             width: 100%;
             .vertical-title{
                 font-size: 23px !important;
-            }
-            .vertical-text{
-                display: none;
-                
             }
         }
         
@@ -149,9 +147,13 @@
 
         }
         .mySwiper{
-            height: 40vh !important;
-            width: 100% !important;
+            .vertical-slider-img{
+                height: 40vh !important;
+                width: 100% !important;
+            }
+            
         }
+
         
     }
 }

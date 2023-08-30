@@ -3,13 +3,41 @@
     font-family: var(--header-font);    
 
     .count-time{
+        padding-left: 10px;
         font-size: 20px;
         text-transform: uppercase;
     }
 
     .countdowns{
-        padding: 0 30px;
+        padding: 0 40px;
         font-size: 85px;
         font-weight: 700;
+        width: 150px;
+    }
+}
+
+@media(max-width:768px){
+    .count-time{
+        padding-right: 20px !important;
+        font-size: 15px !important;
+    }
+
+    .countdowns{
+        padding: 0 10px !important;
+        font-size: 45px !important;
+        width: 80px !important;
+    }
+}
+
+@media(max-width:500px){
+    .count-time{
+        padding-right: 20px !important;
+        font-size: 15px !important;
+    }
+
+    .countdowns{
+        padding: 0 10px !important;
+        font-size: 45px !important;
+        width: 70px !important;
     }
 }

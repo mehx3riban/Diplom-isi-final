@@ -1,6 +1,5 @@
-import React,{useState} from 'react';
+import React from 'react';
 import './Gallery.scss'
-// import { Gallery } from "react-grid-gallery";
 import img1 from '../../assets/images/gallery-img/home-1-gallery-1.jpg'
 import img2 from '../../assets/images/gallery-img/home-1-gallery-2.jpg'
 import img3 from '../../assets/images/gallery-img/home-1-gallery-3-633x633.jpg'
@@ -11,11 +10,11 @@ const Gallerysec = () => {
 
 
   return (
-    <div className='gallery-section' >
+
+    <div className='gallery-section  ' >
        <div className="gallery-container">
       <div className="gallery-item large">
         <img src={img1}  className='img img1' />
-        {/* <div className="overlay"></div> */}
       </div>
 
       <div className="gallery-item">

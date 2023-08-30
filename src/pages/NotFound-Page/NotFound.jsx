@@ -1,11 +1,13 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './NotFound.scss'
 import { Link } from 'react-router-dom'
 import Button from '../../components/Button/Button'
 
 const NotFound = () => {
 
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div >
       

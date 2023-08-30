@@ -29,3 +29,21 @@
         }
     }
 }
+
+@media(max-width:768px){
+    .coming-soon__content_img{
+        width: 180px !important;
+    }
+
+    .coming-soon__title{
+        font-size: 50px !important;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+    .coming-soon__divider{
+        margin-bottom: 13px;
+        // padding: 10px !important;
+        width: 120px;
+        height: 5px;
+    }
+}

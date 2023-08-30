@@ -12,11 +12,6 @@ import "react-toastify/dist/ReactToastify.css"
 
 import Navbar from './components/navbar/Navbar'
 import Footer from './components/Footer/Footer';
-import BookingSection from './components/Booking.jsx/Booking'
-import CoffeeMachine from './components/CoffeeMachines/CoffeeMachines';
-import Menu from './components/MenuSection/Menu';
-import Gallery from './components/Gallery-section/Gallery';
-import VerticalSwiper from './components/VerticalSwiper/VerticalSwiper';
 import Home from './pages/Home/Home';
 import OurMenu from './pages/OurMenu-page/OurMenu';
 import Contact from './pages/Contact-Page/Contact';
@@ -26,12 +21,13 @@ import AboutMe from './pages/AboutMe-Page/AboutMe';
 import GalleryPage from './pages/Gallery-Page/GalleryPage';
 import ShopCart from './pages/ShopCart-Page/ShopCart';
 import ShopPage from './pages/Shop-Page/ShopPage';
-import WhatWeOffer from './pages/OurProcess-Page/OurProcess';
 import OurProcess from './pages/OurProcess-Page/OurProcess';
 import ComingSoon from './pages/ComingSoon-Page/ComingSoon';
 import Reservation from './pages/Reservation-Page/Reservation';
 import Blog from './pages/Blog-Page/Blog'
 import BackToTop from './components/BackToTop/BackToTop';
+import BlogPage2 from './pages/Blog-Page/BlogPage2';
+// import Application from './components/Application/Application';
 
 function App() {
 
@@ -49,28 +45,26 @@ function App() {
       <ToastContainer toastStyle={{ backgroundColor: "#fff" }}/>
         <Navbar/>
       <Routes>
-        {/* <Route path='/' element={<Home/>} />
+        <Route path='/' element={<Home/>} />
         <Route path='*' element={<div><NotFound/></div>} />
         <Route path='/menu' element={<OurMenu/>} />
         <Route path='/reservation' element={<Reservation/>} />
+        <Route path='/about' element={<AboutMe/>} />
+        <Route path='/our-team' element={<MeetOurTeam/>} />
+        <Route path='/our-process' element={<OurProcess/>} />
         <Route path='/contact' element={<Contact/>} />
         <Route path='/gallery' element={<GalleryPage/>} />
+        <Route path='/blog' element={<Blog/>} />
+        <Route path='/blog2' element={<BlogPage2/>} />
+        <Route path='/shop' element={<ShopPage/>} />
         <Route path='/shopcart' element={<ShopCart/>} />
-        <Route path='/our-process' element={<OurProcess/>} />
-        <Route path='/shop' element={<ShopPage/>} /> */}
+        <Route path='/comingsoon' element={<ComingSoon/>} />
+
         {/* <Route path='/products/:id' element={<Details/>} /> */}
 
         
       </Routes>
 
-
-      <Blog/>
-      {/* <ComingSoon/> */}
-      {/* <Contact/> */}
-      {/* / <ShopPage/> */}
-      {/* <OurProcess/> */}
-      {/* <Home/> */}
-      {/* <GalleryPage/> */}
       <BackToTop/>
       <Footer/>
 

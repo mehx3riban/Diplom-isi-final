@@ -2,8 +2,11 @@
     padding-bottom: 25px;
     .caffe-img{
         width: 100px;
-        .caffe-img > img{
+
+        .one-coffee-img{
             width: 100%;
+            transition: transform 0.4s;
+            cursor: pointer;
         }
     }
     .div-line {
@@ -61,7 +64,9 @@
     .caffe-desc{
        max-width: 150px !important;
     }
-
+    .caffe-img{
+        max-width: 80px !important;
+    }
     
     
 }
@@ -78,9 +83,9 @@
 }
 @media(max-width:390px){
     
-    .caffe-img{
-        display: none!important;
-    }
+    // .caffe-img{
+    //     display: none!important;
+    // }
     .name-price {
         padding: 0 !important; 
     }

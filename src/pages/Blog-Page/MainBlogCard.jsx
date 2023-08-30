@@ -4,7 +4,8 @@ import {TiSocialTwitter } from "react-icons/ti";
 import { TiSocialFacebook } from "react-icons/ti";
 import { TiSocialTumbler } from "react-icons/ti";
 import { TiSocialLinkedin } from "react-icons/ti";
-const MainBlogCard = ({mainBlogImg,mainBlogTitle,mainBlogDesc,mainBlogText,mainBlogJob}) => {
+const MainBlogCard = ({mediaSource,mainBlogTitle,mainBlogDesc,mainBlogText,mainBlogJob}) => {
+    const isVideo = mediaSource.endsWith('.mp4');
   return (
     <div>
         <div className='main-blog-card'>
@@ -12,7 +13,15 @@ const MainBlogCard = ({mainBlogImg,mainBlogTitle,mainBlogDesc,mainBlogText,mainB
 
             <div className='main-blog-content'>
             <div className='main-blog-card__img-div'>
-             <img className='main-blog-card__img' src={mainBlogImg} alt="" />
+               
+            {isVideo ? (
+            <video className='main-blog-card__img' muted  autoPlay loop >
+              <source src={mediaSource} type='video/mp4' />
+              Your browser does not support the video tag.
+            </video>
+            ) : (
+            <img className='main-blog-card__img' src={mediaSource} alt='' />
+          )}
 
             </div>
                 <h2 className='class-h2 main-blog-card__title'>{mainBlogTitle}</h2>

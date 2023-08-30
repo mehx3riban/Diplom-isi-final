@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './OurProcess.scss'
 import PagesHeader from '../../components/PagesHeader/PagesHeader'
 import OurProcessImg from '../../assets/images/headers-images/What-we-offer-title-img-800.jpg'
@@ -11,6 +11,10 @@ import Progress from '../../components/ProgressBar/Progress'
 import Button from '../../components/Button/Button'
 
 const OurProcess = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div >

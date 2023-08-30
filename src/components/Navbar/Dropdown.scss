@@ -1,3 +1,24 @@
-.dropdown-class{
-    position: fixed;
+.dropdown-menu{
+    position: absolute;
+    width: 200px;
+    top: 80px;
+    list-style: none;
+    text-align: start;
+
+    .dropdown-menu> li{
+        background-color: var(--main-color);
+        cursor: pointer;
+    }
+
+    .clicked{
+        display: none;
+
+    }
+    .dropdown-link{
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        padding: 10px;
+    }
 }

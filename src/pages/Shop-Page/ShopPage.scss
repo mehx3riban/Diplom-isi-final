@@ -2,3 +2,16 @@
     padding: 90px 50px;
     background-color: #fff;
 }
+
+
+@media(max-width:1200px){
+    .shop-page__content{
+        padding:90px 20px;
+    }
+}
+
+@media(max-width:992px){
+    .shop-page__content{
+        padding:90px 10px;
+    }
+}

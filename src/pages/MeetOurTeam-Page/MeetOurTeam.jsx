@@ -3,7 +3,6 @@ import axios from 'axios'
 import './MeetOurTeam.scss'
 import PagesHeader from '../../components/PagesHeader/PagesHeader'
 import ourTeamHeaderImg from '../../assets/images/our-menu-page/Team-title-area-parallax-img-2.jpg'
-import ProgressBar from "@ramonak/react-progress-bar";
 import TeamMembersCard from '../../components/TeamMembersCard/TeamMembersCard'
 import SectionHeading from '../../components/SectionHeading/SectionHeading'
 import Progress from '../../components/ProgressBar/Progress'
@@ -15,6 +14,11 @@ const MeetOurTeam = () => {
      axios.get('/src/json/TeamMembers.json')
     .then (melumat => setMemberData(melumat.data))
 })
+
+useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div>
          <PagesHeader classAdiTitle='header-content_title-33' classAdi='header-content-45' headerImg={ourTeamHeaderImg} strength='200' headerText='meet our team' />
@@ -49,9 +53,12 @@ const MeetOurTeam = () => {
                 <div className='col-12 col-lg-6  team-members-right '>
 
                     <div className='our-team_skills'>
-                        <Progress skillName='DESIGN' percentage='92'/>
-                        <Progress skillName='DEVELOPMENT' percentage='67'/>
-                        <Progress skillName='USER EXPERIENCE' percentage='73'/>
+                        
+                            <Progress skillName='DESIGN' percentage='92'/>
+                            <Progress skillName='DEVELOPMENT' percentage='67'/>                     
+                            <Progress skillName='USER EXPERIENCE' percentage='73'/>
+
+                        
                     </div>
                    
 

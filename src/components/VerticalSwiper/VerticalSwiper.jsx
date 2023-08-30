@@ -42,7 +42,7 @@ const VerticalSwiper = () => {
             spaceBetween={30}
             centeredSlides={true}
             autoplay={{
-              delay: 7500,
+              delay: 4500,
               disableOnInteraction: false,
             }}
            direction={'vertical'}

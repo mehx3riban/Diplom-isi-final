@@ -1,9 +1,10 @@
 import React from 'react'
 import './Card.scss'
 import {ImArrowRight2} from 'react-icons/im'
-const Card = ({cardImg ,cardNumber,cardDescription, cardTitle,h3classi, cardText }) => {
+import { Link } from 'react-router-dom'
+const Card = ({cardImg ,cardNumber,cardDescription, cardTitle,h3classi, cardText,to }) => {
   return (
-  <div className='col-12 col-md-4'>
+  <div className='col-12 col-md-4' data-aos="zoom-in-up">
     <div className='kart' >
 
     <div className="kart-img">
@@ -24,12 +25,12 @@ const Card = ({cardImg ,cardNumber,cardDescription, cardTitle,h3classi, cardText
         <p className="kart-text">{cardText}</p>
 
 
-        <a href="" className='links'>
+        <Link to={to} className='links'>
           <span>Read more</span>
           <div className='link-icon'>
             <ImArrowRight2/> 
             </div>
-        </a>
+        </Link>
 
         
     </div>

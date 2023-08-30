@@ -1,7 +1,8 @@
-import React,{useEffect} from 'react'
+import React, { useRef,useEffect } from 'react';
+import emailjs from '@emailjs/browser';
 import PagesHeader from '../../components/PagesHeader/PagesHeader'
 import ContactImg from '../../assets/images/headers-images/Contact-title.jpg'
-import Button from '../../components/Button/Button'
+// import Button from '../../components/Button/Button'
 import { FaLocationDot } from '../../../node_modules/react-icons/fa6'
 import { FiPhone } from '../../../node_modules/react-icons/fi'
 import { HiOutlineMail } from '../../../node_modules/react-icons/hi'
@@ -11,6 +12,20 @@ import './contact.css'
 
 
 const Contact = () => {
+
+  const formEl = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_a82z6w5', 'template_n6w9jwa', formEl.current, 'PDXyUUoAZ8p8D6dNe')
+    .then((result) => {
+        console.log(result.text);
+        formEl.current.reset();
+    }, (error) => {
+        console.log(error.text);
+    });
+};
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -36,7 +51,7 @@ const Contact = () => {
 
             <div className='contact-form pt-5'>
 
-            <Formik
+            <Formik 
                 initialValues={{
                   name: '',
                   surname: '',
@@ -57,17 +72,17 @@ const Contact = () => {
                   .required('Phone number is required'),
                   message: Yup.string().required('Message is required'),
                 })}
-                onSubmit={(values, { resetForm, setSubmitting }) => {
+                onSubmit={(values, {  setSubmitting }) => {
                   console.log(values);
                   setSubmitting(false);
-                  setTimeout(() => {
-                    resetForm();
-                  }, 2000);
+                  // setTimeout(() => {
+                  //   resetForm();
+                  // }, 2000);
                 }}
               >
                 {({ dirty, isSubmitting }) => (
-                  <Form>
-                    <div className="form-group" data-aos="fade-up" data-aos-duration="1000" >
+                  <Form ref={formEl} onSubmit={sendEmail}>
+                    <div className="form-group" data-aos="fade-up"  >
                       <Field
                         type="text"
                         id="name"
@@ -78,7 +93,7 @@ const Contact = () => {
                       <ErrorMessage name="name" component="div" className="error-message" />
                     </div>
 
-                    <div className="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div className="form-group" data-aos="fade-up"  >
                       <Field
                         type="text"
                         id="surname"
@@ -89,7 +104,7 @@ const Contact = () => {
                       <ErrorMessage name="surname" component="div" className="error-message" />
                     </div>
 
-                    <div className="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div className="form-group" data-aos="fade-up"  >
                       <Field
                         type="email"
                         id="email"
@@ -100,7 +115,7 @@ const Contact = () => {
                       <ErrorMessage name="email" component="div" className="error-message" />
                     </div>
 
-                    <div className="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div className="form-group" data-aos="fade-up"  >
                       <Field
                         type="text"
                         id="phone"
@@ -111,7 +126,7 @@ const Contact = () => {
                       <ErrorMessage name="phone" component="div" className="error-message" />
                     </div>
 
-                    <div className="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div className="form-group" data-aos="fade-up"  >
                       <Field
                         as="textarea"
                         id="message"
@@ -123,7 +138,7 @@ const Contact = () => {
                       <ErrorMessage name="message" component="div" className="error-message" />
                     </div>
 
-                    <div className='form-group d-flex justify-content-end pt-1 '>
+                    <div className='form-group d-flex justify-content-end pt-1 ' data-aos="fade-up" >
                       <button className='button-contact' type="submit" disabled={!dirty || isSubmitting}>
                         send
                       </button>
@@ -132,7 +147,6 @@ const Contact = () => {
                   </Form>
                 )}
               </Formik>
-
 
             </div>
           </div>

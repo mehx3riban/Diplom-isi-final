@@ -14,7 +14,7 @@ useEffect(()=>{
   return (
     
 
-    <div >
+    <div className='description-cards-section' >
         
         <SectionHeading classAdiHeader='bg-white' classAdih2='dark' classAdih4='light' sectionHeadingh2='READ OUR LATEST NEWS' sectionHeadingh4='What Happens Here' classAdiDivider='divider-dark' />
 
@@ -28,6 +28,7 @@ useEffect(()=>{
                     cardDescription={birCart.CardDescripton}
                     cardTitle={birCart.CardTitle}
                     cardText={birCart.CardText}
+                    to='/blog'
                     h3classi='desc-title'
                     />
                 ))}

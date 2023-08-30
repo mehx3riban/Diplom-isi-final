@@ -140,20 +140,24 @@ const Application = () => {
         </div>
             <div className='app-content row align-items-center  '>
 
-                <div className='app-right col-12 col-md-6' >
+                <div className='app-right col-12 col-md-6'  >
 
                     <img src={appLogo}  className='app-logo col-md-6'  />
 
                 </div>
 
-                <div className='app-left col-12 col-md-6' >
+                <div className='app-left col-12 col-md-6'  >
 
                     <SectionHeading classAdiHeader='section-heading-left' classAdih4='text-white' sectionHeadingh4='Application' classAdih2='text-white' sectionHeadingh2='USE OUR APPLICATION.' classAdiDivider='divider-light' />
 
 
-                    <p className='app-text'>Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et. Mea facilisis urbanitas moderatius.</p>
+                    <p data-aos="fade-left" data-aos-duration='1000' className='app-text'>Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et. Mea facilisis urbanitas moderatius.</p>
+
+                    <div data-aos="fade-left" >
+                      <Button icindekiYazi='read more' classAdi='btn-brown-light '/>
+
+                    </div>
                     
-                    <Button   icindekiYazi='read more' classAdi='btn-brown-light '/>
 
                 </div>
                 

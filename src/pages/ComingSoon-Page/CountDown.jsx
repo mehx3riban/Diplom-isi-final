@@ -23,7 +23,7 @@ const CountDown = ({ delayResend = "1600900" }) => {
   return (
     <>
 
-        <div className=" d-flex ">
+        <div className=" d-flex  ">
             <div className="count-down d-flex flex-column justify-content-center align-items-center ">
                 <div className="countdowns">
                      {days}

@@ -16,7 +16,7 @@ const Progress = ({ percentage ,skillName }) => {
 
         const options = {
             root: null,
-            threshold: 0.5,
+            threshold: 0.6,
         };
 
         const observer = new IntersectionObserver(handleIntersection, options);

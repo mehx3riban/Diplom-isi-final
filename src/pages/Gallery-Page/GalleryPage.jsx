@@ -5,7 +5,7 @@ import axios from 'axios'
 import GalleryCard from './GalleryCard'
 import PagesHeader from '../../components/PagesHeader/PagesHeader'
 import galleryHeaderImg from '../../assets/images/headers-images/Contact-title.jpg'
-import Navbar from '../../components/navbar/Navbar'
+// import Navbar from '../../components/navbar/Navbar'
 
 
 
@@ -18,6 +18,9 @@ const GalleryPage = () => {
   },[])
 
   
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
   <>

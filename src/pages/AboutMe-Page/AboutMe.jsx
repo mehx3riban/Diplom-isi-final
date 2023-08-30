@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './AboutMe.scss'
 import PagesHeader from '../../components/PagesHeader/PagesHeader'
 import aboutMeImg from '../../assets/images/headers-images/Team-title-area-parallax-img-2.jpg'
@@ -8,8 +8,14 @@ import { TiSocialInstagram } from "react-icons/ti";
 import {TiSocialTwitter } from "react-icons/ti";
 import { TiSocialFacebook } from "react-icons/ti";
 import { TiSocialTumbler } from "react-icons/ti";
+import Test from '../../components/Test/Test'
 
 const AboutMe = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
   return (
     <div className='about-me-section'>
 

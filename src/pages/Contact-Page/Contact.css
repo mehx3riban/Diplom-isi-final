@@ -34,14 +34,14 @@
   width: 100%;
   padding: 17px 19px !important;
   color: #c7a17a !important;
-  border: 2px solid transparent !important;
+  border: 1px solid var(--main-color) !important;
   border-radius: 0%;
   font-family: var(--main-font);
   outline: 0 !important;
   /* font-style: italic; */
   font-size: 14px;
   background-color: #f6f4ef;
-  color: var(--main-color) !important;
+  color: var(--secondary-color) !important;
 }
 
 
@@ -55,6 +55,7 @@
   border-color: #c7a17a !important;
   background-color: none;
 }
+
 
 .error-message{
   color: red;

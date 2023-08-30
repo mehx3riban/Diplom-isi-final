@@ -8,7 +8,7 @@ const TeamMembersCard = ({teamCardImg,memberName,memberPosition,teamCardText}) =
   return (
     <div>
         <div className=''>
-            <div className='Team-card'>
+            <div className='Team-card p-lg-2'>
 
                 <div className="Team-card__img">
                     <img src={teamCardImg}  alt="..."/>

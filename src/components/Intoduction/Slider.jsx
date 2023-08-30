@@ -11,12 +11,15 @@ const Slider = ({bgImage, sliderIcon ,sliderTitle ,sliderText}) => {
 
             <Parallax className='bg-image'   bgImage={bgImage}  strength={120}>
             <div className='sliders'>
-                <img src={sliderIcon}  className='sliderLogo'  />
-                <h1 >{sliderTitle}</h1>
+                <img src={sliderIcon}  className='sliderLogo'  data-aos="fade-up" data-aos-duration="700" />
+                <h1  data-aos="fade-up" data-aos-duration="800">{sliderTitle}</h1>
                 <div className='textDiv'>
-                    <p >{sliderText}</p>
+                    <p  data-aos="fade-up" data-aos-duration="900" >{sliderText}</p>
                 </div>
-                <Button to='/'   icindekiYazi='read more' classAdi='btn-transparent intro-btn'/>
+                <div  data-aos="fade-up">
+                    <Button to='/' data-aos-duration="1000"  icindekiYazi='read more' classAdi='btn-transparent intro-btn'/>
+                </div>
+                
                 
                 <div className='custom-shape-divider-bottom-1691475425' >
                     <svg  preserveAspectRatio="none" width="100%" height="27px" viewBox="0 0 1920 27" enableBackground="new 0 0 1920 27"><path className='shape-fill' d="M1906.688,12.029c-1.653-1.78-3.943-0.347-5.823-0.883c-0.623,0.442-0.879,1.208-1.873,1.044

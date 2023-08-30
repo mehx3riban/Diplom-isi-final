@@ -1,20 +1,21 @@
 .error-header{
     // height: 20vh;
-    background-color: #F5F5F5;
-    padding: 50px 110px;
+    background-color: gray;
+    padding: 80px 110px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     .error-header__title{
         font-family: var(--header-font);
-        color: var(--secondary-color);
+        color:#fff;
         font-weight: 700;
         text-transform: uppercase;
         font-size: 22px;
+        
     }
     .error-header__span{
-        color: var(--main-color);
+        color: #fff;
         font-family: var(--italic-font);
         font-size: 16px;
         font-weight: 400;
@@ -25,7 +26,7 @@
 .error-content {
     text-align: center;
     background-color: #fff;
-    padding: 90px 200px;
+    padding: 70px 200px;
     .error-content__title{
         font-family: Oswald,sans-serif;
         font-size: 120px;

@@ -1,6 +1,5 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Introduction from '../../components/intoduction/Introduction'
-// import SectionHeading from '../../components/SectionHeading/SectionHeading'
 import BookingSection from '../../components/BookingSection/BookingSection'
 import NumberCards from '../../components/NumberCards/NumberCards'
 import Application from '../../components/Application/Application'
@@ -9,8 +8,12 @@ import VerticalSwiper from '../../components/VerticalSwiper/VerticalSwiper'
 import Menu from '../../components/MenuSection/Menu'
 import Gallery from '../../components/Gallery-section/Gallery'
 import DescriptionCards from '../../components/DescriptionCards/DescriptionCards'
-import Navbar from '../../components/navbar/Navbar'
 const Home = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
         <Introduction/>
